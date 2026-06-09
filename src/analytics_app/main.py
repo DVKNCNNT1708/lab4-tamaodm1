@@ -166,6 +166,17 @@ def get_analytics_summary(
     try:
         dt_from = datetime.fromisoformat(fromDate)
         dt_to = datetime.fromisoformat(toDate)
+        # convert to epoch timestamps (UTC) for safe comparison
+        if dt_from.tzinfo is None:
+            dt_from = dt_from.replace(tzinfo=timezone.utc)
+        else:
+            dt_from = dt_from.astimezone(timezone.utc)
+        if dt_to.tzinfo is None:
+            dt_to = dt_to.replace(tzinfo=timezone.utc)
+        else:
+            dt_to = dt_to.astimezone(timezone.utc)
+        dt_from_ts = dt_from.timestamp()
+        dt_to_ts = dt_to.timestamp()
     except Exception:
         raise HTTPException(status_code=400, detail=Problem(title="Bad Request", status=400, detail="Invalid date format").dict())
 
@@ -175,9 +186,15 @@ def get_analytics_summary(
     for e in _EVENT_STORE:
         try:
             occurred = datetime.fromisoformat(e.get("occurredAt") or e.get("occurred_at") or e.get("received_at"))
+            if occurred.tzinfo is None:
+                occurred = occurred.replace(tzinfo=timezone.utc)
+            else:
+                occurred = occurred.astimezone(timezone.utc)
+            occurred_ts = occurred.timestamp()
         except Exception:
             continue
-        if occurred < dt_from or occurred > dt_to:
+        # compare using epoch timestamps
+        if occurred_ts < dt_from_ts or occurred_ts > dt_to_ts:
             continue
         if sourceType and e.get("sourceType") != sourceType:
             continue

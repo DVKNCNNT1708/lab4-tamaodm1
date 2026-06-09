@@ -325,3 +325,33 @@ API đó có thể được đóng gói, chạy lại và kiểm thử trong con
 ```text
 Docker container đơn lẻ → Docker Compose nhiều service → Plug-a-thon.
 ```
+
+---
+
+## Analytics Service (Lab 4 example)
+
+This repository includes a simple `analytics_app` implemented for Lab 4 as an example service derived from `analytics.openapi.yaml`.
+
+- Run locally (Python virtualenv):
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1  # PowerShell
+pip install -r requirements.txt
+python -m uvicorn src.analytics_app.main:app --host 127.0.0.1 --port 4010
+```
+
+- Quick sanity checks (replace token if you set `AUTH_TOKEN`):
+
+```powershell
+curl http://127.0.0.1:4010/health
+
+curl -X POST http://127.0.0.1:4010/ingest -H "Authorization: Bearer local-dev-token" -H "Content-Type: application/json" -d '{"sourceType":"camera","detectionId":"d-1","detectionType":"PERSON","confidence":0.95,"cameraId":"CAM-01","occurredAt":"2026-06-01T10:00:00+00:00"}'
+
+curl "http://127.0.0.1:4010/analytics/summary?fromDate=2026-06-01T00:00:00&toDate=2026-06-30T23:59:59" -H "Authorization: Bearer local-dev-token"
+
+curl http://127.0.0.1:4010/dashboard -H "Authorization: Bearer local-dev-token"
+```
+
+The `analytics_app` is intentionally lightweight and stores events in memory for demonstration and testing only.
+
