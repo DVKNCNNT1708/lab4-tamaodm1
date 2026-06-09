@@ -18,7 +18,9 @@ jobs:
           cache: "npm"
 
       - name: Install Node dependencies
-        run: npm ci
+        run: |
+          npm install
+          mkdir -p reports
 
       - name: Lint OpenAPI contract
         run: npm run lint:openapi
