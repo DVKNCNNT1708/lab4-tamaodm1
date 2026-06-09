@@ -82,6 +82,35 @@ docker stop fit4110-iot-lab04
 
 ---
 
+## Run Analytics example
+
+Build image for analytics example:
+
+```bash
+docker build -f Dockerfile.analytics -t fit4110/analytics:lab04 .
+```
+
+Run container:
+
+```bash
+docker run --rm \
+  --name fit4110-analytics-lab04 \
+  -p 4010:4010 \
+  --env-file .env.example \
+  fit4110/analytics:lab04
+```
+
+Check health and endpoints:
+
+```bash
+curl http://localhost:4010/health
+curl -X POST http://localhost:4010/ingest -H "Authorization: Bearer local-dev-token" -H "Content-Type: application/json" -d '{"sourceType":"camera","detectionId":"d-1","detectionType":"PERSON","confidence":0.95,"cameraId":"CAM-01","occurredAt":"2026-06-01T10:00:00+00:00"}'
+curl "http://localhost:4010/analytics/summary?fromDate=2026-06-01T00:00:00&toDate=2026-06-30T23:59:59" -H "Authorization: Bearer local-dev-token"
+```
+
+
+---
+
 ## 7. Lệnh nhanh
 
 ```bash
