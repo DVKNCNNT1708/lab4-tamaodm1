@@ -26,6 +26,8 @@ ENV AUTH_TOKEN=local-dev-token
 
 WORKDIR /app
 
+RUN apt-get update && apt-get install -y --no-install-recommends curl && rm -rf /var/lib/apt/lists/*
+
 RUN addgroup --system appgroup \
     && adduser --system --ingroup appgroup --home /app appuser
 
@@ -39,6 +41,6 @@ USER appuser
 EXPOSE 8000
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
-  CMD python -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3).read()" || exit 1
+  CMD curl -f http://127.0.0.1:8000/health || exit 1
 
 CMD ["sh", "-c", "uvicorn iot_app.main:app --app-dir src --host ${APP_HOST} --port ${APP_PORT}"]
