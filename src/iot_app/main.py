@@ -1,3 +1,4 @@
+import http
 import os
 from datetime import datetime, timezone
 from enum import Enum
@@ -105,6 +106,14 @@ def build_problem(
     return problem
 
 
+def get_status_text(status_code: int) -> str:
+    """Get HTTP status text from status code."""
+    try:
+        return http.HTTPStatus(status_code).phrase
+    except ValueError:
+        return "Unknown Error"
+
+
 @app.exception_handler(HTTPException)
 async def http_exception_handler(request: Request, exc: HTTPException) -> JSONResponse:
     if isinstance(exc.detail, dict):
@@ -112,14 +121,14 @@ async def http_exception_handler(request: Request, exc: HTTPException) -> JSONRe
     else:
         problem = build_problem(
             status_code=exc.status_code,
-            title=status.HTTP_STATUS_CODES.get(exc.status_code, "HTTP Error"),
+            title=get_status_text(exc.status_code),
             detail=str(exc.detail),
             instance=str(request.url.path),
             problem_type="https://smart-campus.local/problems/request-error",
         )
 
     problem.setdefault("status", exc.status_code)
-    problem.setdefault("title", status.HTTP_STATUS_CODES.get(exc.status_code, "HTTP Error"))
+    problem.setdefault("title", get_status_text(exc.status_code))
     problem.setdefault("type", "about:blank")
     problem.setdefault("detail", "Request failed")
     problem.setdefault("instance", str(request.url.path))
