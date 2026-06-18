@@ -472,7 +472,7 @@ body.theme-light code {
                 <a class="nav-link text-white" id="pills-requests-tab" data-toggle="pill" href="#pills-requests" role="tab" aria-controls="pills-requests" aria-selected="false">Total Requests <span class="badge badge-light">11</span></a>
             </li>
             <li class="nav-item bg-danger" data-toggle="tooltip" title="Click to view the Failed Tests">
-                <a class="nav-link text-white" id="pills-failed-tab" data-toggle="pill" href="#pills-failed" role="tab" aria-controls="pills-failed" aria-selected="false">Failed Tests <span class="badge badge-light">4</span></a>
+                <a class="nav-link text-white" id="pills-failed-tab" data-toggle="pill" href="#pills-failed" role="tab" aria-controls="pills-failed" aria-selected="false">Failed Tests <span class="badge badge-light">0</span></a>
             </li>
             <li class="nav-item bg-warning" data-toggle="tooltip" title="Click to view the Skipped Tests">
                 <a class="nav-link text-white" id="pills-skipped-tab" data-toggle="pill" href="#pills-skipped" role="tab" aria-controls="pills-skipped" aria-selected="false">Skipped Tests <span class="badge badge-light">0</span></a>
@@ -483,11 +483,11 @@ body.theme-light code {
 <div class="row">
   <div class="col-md-9 col-lg-12 main">
    <h1 class="display-2 text-center">Newman Run Dashboard</h1>
-   <h5 class="text-center">Tuesday, 09 June 2026 17:38:02</h5>
+   <h5 class="text-center">Thursday, 18 June 2026 19:21:29</h5>
    <div class="row">
     <div class="col-lg-3 col-md-6">
      <div class="card text-white card-success">
-      <div class="card-body bg-danger">
+      <div class="card-body bg-success">
        <div class="rotate">
         <i class="fa fa-retweet fa-5x"></i>
        </div>
@@ -509,12 +509,12 @@ body.theme-light code {
     </div>
     <div class="col-lg-3 col-md-6">
      <div class="card text-white card-info">
-      <div class="card-body bg-danger">
+      <div class="card-body bg-success">
        <div class="rotate">
         <i class="fa fa-plus-circle fa-5x"></i>
        </div>
        <h6 class="text-uppercase">Total Failed Tests</h6>
-       <h1 class="display-1">4</h1>
+       <h1 class="display-1">0</h1>
       </div>
      </div>
     </div>
@@ -562,9 +562,9 @@ body.theme-light code {
             <div class="card border-info">
                 <div class="card-body">
                 <h5 class="card-title text-uppercase text-white text-center bg-info">Timings and Data</h5>
-                <span><i class="fas fa-stopwatch"></i></span><strong> Total run duration:</strong> 1269ms<br>
-                <span><i class="fas fa-database"></i></span><strong> Total data received:</strong> 1.38KB<br>
-                <span><i class="fas fa-stopwatch"></i></span><strong> Average response time:</strong> 25ms<br>
+                <span><i class="fas fa-stopwatch"></i></span><strong> Total run duration:</strong> 1000ms<br>
+                <span><i class="fas fa-database"></i></span><strong> Total data received:</strong> 2.4KB<br>
+                <span><i class="fas fa-stopwatch"></i></span><strong> Average response time:</strong> 5ms<br>
                 </div>
             </div>
         </div>
@@ -594,12 +594,12 @@ body.theme-light code {
                     <tr>
                         <td>Test Scripts</td>
                         <td class="text-center">11</td>
-                        <td class="text-center">2</td>
+                        <td class="text-center">0</td>
                     </tr>
-                    <tr class="table-danger">
+                    <tr class="">
                         <td>Assertions</td>
                         <td class="text-center">19</td>
-                        <td class="text-center">2</td>
+                        <td class="text-center">0</td>
                     </tr>
                     <tr class="">
                         <td>Skipped Tests</td>
@@ -620,103 +620,9 @@ body.theme-light code {
             <div class="tab-pane fade" id="pills-failed" role="tabcard" aria-labelledby="pills-failed-tab">
                 <button id="topOfFailuresScreen" class="btn btn-outline-success btn-sm backToTop" onclick="topFunction()">Go To Top</button>
 
-                    <div class="btn-group float-right" role="group" aria-label="Button Group">
-                        <button id="openAllFailed" class="btn btn-outline-success btn-sm float-right" style="text-align: center; width: 185px;">Expand All Failed Tests</button>
-                    </div>
-                    <br>
-                    <br>
-
-                    <div class="alert alert-danger text-uppercase text-center">
-                        <h4>Showing 4 Failures</h4>
-                    </div>
-                    <div class="col-sm-12 mb-3">
-                    <div class="card-deck">
-                        <div class="card border-danger">
-                            <div class="card-header bg-danger">
-                                <a data-toggle="collapse" href="#" data-target="#fails-collapse-de625965-2b01-46bd-aa54-706ac67f612d" aria-expanded="false" aria-controls="collapse" id="fails-de625965-2b01-46bd-aa54-706ac67f612d" class="collapsed text-white z-block">
-                                    Iteration 1 - AssertionError - 02_Auth - POST reading without token returns 401 <i class="float-lg-right fa fa-chevron-down" style="padding-top:5px;"></i>
-                                </a>
-                            </div>
-                            <div id="fails-collapse-de625965-2b01-46bd-aa54-706ac67f612d" class="collapse" aria-labelledby="fails-de625965-2b01-46bd-aa54-706ac67f612d">
-                            <div class="card-body">
-                                <h5 ><strong>Failed Test:</strong> Missing token returns 401</h5>
-                            <hr>
-                            <h5 class="card-title text-uppercase text-white text-center bg-danger">Assertion Error Message</h5>
-                            <div>
-                                <pre><code >expected response to have status code 401 but got 500</code></pre>
-                            </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-sm-12 mb-3">
-                    <div class="card-deck">
-                        <div class="card border-danger">
-                            <div class="card-header bg-danger">
-                                <a data-toggle="collapse" href="#" data-target="#fails-collapse-9a2ca6cd-8656-4247-b735-7472e345248a" aria-expanded="false" aria-controls="collapse" id="fails-9a2ca6cd-8656-4247-b735-7472e345248a" class="collapsed text-white z-block">
-                                    Iteration 1 - JSONError - 02_Auth - POST reading without token returns 401 <i class="float-lg-right fa fa-chevron-down" style="padding-top:5px;"></i>
-                                </a>
-                            </div>
-                            <div id="fails-collapse-9a2ca6cd-8656-4247-b735-7472e345248a" class="collapse" aria-labelledby="fails-9a2ca6cd-8656-4247-b735-7472e345248a">
-                            <div class="card-body">
-                                <h5 ><strong>Failed Test:</strong> </h5>
-                            <hr>
-                            <h5 class="card-title text-uppercase text-white text-center bg-danger">Assertion Error Message</h5>
-                            <div>
-                                <pre><code >Unexpected token &#x27;I&#x27; at 1:1
-Internal Server Error
-^</code></pre>
-                            </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-sm-12 mb-3">
-                    <div class="card-deck">
-                        <div class="card border-danger">
-                            <div class="card-header bg-danger">
-                                <a data-toggle="collapse" href="#" data-target="#fails-collapse-0eb1bc84-40c3-428f-9930-76311e8c3035" aria-expanded="false" aria-controls="collapse" id="fails-0eb1bc84-40c3-428f-9930-76311e8c3035" class="collapsed text-white z-block">
-                                    Iteration 1 - AssertionError - 02_Auth - POST reading with wrong token returns 401 <i class="float-lg-right fa fa-chevron-down" style="padding-top:5px;"></i>
-                                </a>
-                            </div>
-                            <div id="fails-collapse-0eb1bc84-40c3-428f-9930-76311e8c3035" class="collapse" aria-labelledby="fails-0eb1bc84-40c3-428f-9930-76311e8c3035">
-                            <div class="card-body">
-                                <h5 ><strong>Failed Test:</strong> Wrong token returns 401</h5>
-                            <hr>
-                            <h5 class="card-title text-uppercase text-white text-center bg-danger">Assertion Error Message</h5>
-                            <div>
-                                <pre><code >expected response to have status code 401 but got 500</code></pre>
-                            </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-sm-12 mb-3">
-                    <div class="card-deck">
-                        <div class="card border-danger">
-                            <div class="card-header bg-danger">
-                                <a data-toggle="collapse" href="#" data-target="#fails-collapse-a855e9aa-dd93-44fc-b7a3-f47b10e53719" aria-expanded="false" aria-controls="collapse" id="fails-a855e9aa-dd93-44fc-b7a3-f47b10e53719" class="collapsed text-white z-block">
-                                    Iteration 1 - JSONError - 02_Auth - POST reading with wrong token returns 401 <i class="float-lg-right fa fa-chevron-down" style="padding-top:5px;"></i>
-                                </a>
-                            </div>
-                            <div id="fails-collapse-a855e9aa-dd93-44fc-b7a3-f47b10e53719" class="collapse" aria-labelledby="fails-a855e9aa-dd93-44fc-b7a3-f47b10e53719">
-                            <div class="card-body">
-                                <h5 ><strong>Failed Test:</strong> </h5>
-                            <hr>
-                            <h5 class="card-title text-uppercase text-white text-center bg-danger">Assertion Error Message</h5>
-                            <div>
-                                <pre><code >Unexpected token &#x27;I&#x27; at 1:1
-Internal Server Error
-^</code></pre>
-                            </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
+                <div class="alert alert-success text-uppercase text-center">
+                     <br><br><h1 class="text-center">There are no failed tests <span><i class="far fa-thumbs-up"></i></span></h1><br><br>
+                </div>
             </div>
 
             <div class="tab-pane fade" id="pills-skipped" role="tabcard" aria-labelledby="pills-skipped-tab">
@@ -731,7 +637,6 @@ Internal Server Error
             <button id="topOfRequestsScreen" class="btn btn-outline-success btn-sm backToTop" onclick="topFunction()">Go To Top</button>
 
             <div class="btn-group float-right" role="group" aria-label="Button Group">
-                <button id="showOnlyFailures" class="btn btn-outline-success btn-sm float-right" style="text-align: center; width:160px;">Show Failed Iterations</button>
                 <button id="openAll" class="btn btn-outline-success btn-sm float-right" style="text-align: center; width: 140px;">Expand Folders</button>
                 <button id="openAllRequests" class="btn btn-outline-success btn-sm float-right" style="text-align: center; width: 140px;">Expand Requests</button>
             </div>
@@ -747,22 +652,22 @@ Internal Server Error
     <h6 class="text-uppercase text-muted" id="iterationSelected" style="padding-top: 10px;"></h6>
 	<div class="tab-content" id="execution-data">
         <div class="alert alert-dark text-uppercase text-center iteration-0">
-        <a data-toggle="collapse" href="#" data-target="#folder-collapse-8ea6f4f3-2711-41bb-a36b-0f59ac0dd193-iteration-0" aria-expanded="false" aria-controls="collapse" id="folder-8ea6f4f3-2711-41bb-a36b-0f59ac0dd193-iteration-0" class="collapsed text-dark z-block">
+        <a data-toggle="collapse" href="#" data-target="#folder-collapse-3e8baec1-4898-4b99-97ef-77b1c68dfbfb-iteration-0" aria-expanded="false" aria-controls="collapse" id="folder-3e8baec1-4898-4b99-97ef-77b1c68dfbfb-iteration-0" class="collapsed text-dark z-block">
         <i class="fas fa-info-circle float-left resultsInfoPass" ></i>
             01_Functional - 4 Requests in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
         </a>
         </div>
-        <div id="folder-collapse-8ea6f4f3-2711-41bb-a36b-0f59ac0dd193-iteration-0" class="collapse" aria-labelledby="folder-8ea6f4f3-2711-41bb-a36b-0f59ac0dd193">
-            <div id="folder-3b0a7828-2034-459e-be3d-16a2af6182b0" class="card-deck iteration-0">
+        <div id="folder-collapse-3e8baec1-4898-4b99-97ef-77b1c68dfbfb-iteration-0" class="collapse" aria-labelledby="folder-3e8baec1-4898-4b99-97ef-77b1c68dfbfb">
+            <div id="folder-06c69663-b882-489b-9299-a61e06343f5f" class="card-deck iteration-0">
             <div class="row iteration-0">
                 <div class="col-sm-12 mb-3 iteration-0">
                 <div class="card iteration-0">
                     <div class="card-header  bg-success iteration-0">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-3b0a7828-2034-459e-be3d-16a2af6182b0" aria-expanded="false" aria-controls="collapse" id="requests-3b0a7828-2034-459e-be3d-16a2af6182b0" class="collapsed text-white z-block">
+                        <a data-toggle="collapse" href="#" data-target="#collapse-06c69663-b882-489b-9299-a61e06343f5f" aria-expanded="false" aria-controls="collapse" id="requests-06c69663-b882-489b-9299-a61e06343f5f" class="collapsed text-white z-block">
                     Iteration: 1 - GET health returns 200 <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-3b0a7828-2034-459e-be3d-16a2af6182b0" class="collapse" aria-labelledby="requests-3b0a7828-2034-459e-be3d-16a2af6182b0">
+                    <div id="collapse-06c69663-b882-489b-9299-a61e06343f5f" class="collapse" aria-labelledby="requests-06c69663-b882-489b-9299-a61e06343f5f">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -778,7 +683,7 @@ Internal Server Error
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
                                     <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 200 - OK</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 66ms</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 24ms</span><br>
                                     <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 59B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
@@ -818,7 +723,7 @@ Internal Server Error
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">3c142904-2561-4d8a-a274-d55127959d59</td>
+                                                        <td class="text-wrap">92acfc60-aa6d-455b-ad7b-73aa342790eb</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -852,7 +757,7 @@ Internal Server Error
                                             <tbody>
                                                 <tr>
                                                     <td class="text-nowrap">date</td>
-                                                    <td class="text-wrap">Tue, 09 Jun 2026 10:38:01 GMT</td>
+                                                    <td class="text-wrap">Thu, 18 Jun 2026 12:21:27 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">server</td>
@@ -881,10 +786,10 @@ Internal Server Error
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-b490d5ba-ff41-4200-af1d-e02762367859" class="prettyPrint">{&quot;status&quot;:&quot;ok&quot;,&quot;service&quot;:&quot;iot-ingestion&quot;,&quot;version&quot;:&quot;0.4.0&quot;}</code></pre>
+                                                <pre><code id="copyText-02219614-a402-4747-b150-6c7aca64239f" class="prettyPrint">{&quot;status&quot;:&quot;ok&quot;,&quot;service&quot;:&quot;iot-ingestion&quot;,&quot;version&quot;:&quot;0.4.0&quot;}</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-b490d5ba-ff41-4200-af1d-e02762367859">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-02219614-a402-4747-b150-6c7aca64239f">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -955,16 +860,16 @@ Internal Server Error
                 </div>
             </div>
             </div>
-            <div id="folder-df4dc0b3-d418-4153-ac1c-5310bffa6fac" class="card-deck iteration-0">
+            <div id="folder-1251fedc-a38d-4a1b-94e8-653e8299d68b" class="card-deck iteration-0">
             <div class="row iteration-0">
                 <div class="col-sm-12 mb-3 iteration-0">
                 <div class="card iteration-0">
                     <div class="card-header  bg-success iteration-0">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-df4dc0b3-d418-4153-ac1c-5310bffa6fac" aria-expanded="false" aria-controls="collapse" id="requests-df4dc0b3-d418-4153-ac1c-5310bffa6fac" class="collapsed text-white z-block">
+                        <a data-toggle="collapse" href="#" data-target="#collapse-1251fedc-a38d-4a1b-94e8-653e8299d68b" aria-expanded="false" aria-controls="collapse" id="requests-1251fedc-a38d-4a1b-94e8-653e8299d68b" class="collapsed text-white z-block">
                     Iteration: 1 - POST valid temperature reading returns 201 <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-df4dc0b3-d418-4153-ac1c-5310bffa6fac" class="collapse" aria-labelledby="requests-df4dc0b3-d418-4153-ac1c-5310bffa6fac">
+                    <div id="collapse-1251fedc-a38d-4a1b-94e8-653e8299d68b" class="collapse" aria-labelledby="requests-1251fedc-a38d-4a1b-94e8-653e8299d68b">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -980,7 +885,7 @@ Internal Server Error
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
                                     <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 201 - Created</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 15ms</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 4ms</span><br>
                                     <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 140B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
@@ -1028,7 +933,7 @@ Internal Server Error
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">aaef6869-ec1a-4407-9c40-2159421312db</td>
+                                                        <td class="text-wrap">831bb00f-95d1-41d1-9476-b225cc5e33fb</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -1089,7 +994,7 @@ Internal Server Error
                                             <tbody>
                                                 <tr>
                                                     <td class="text-nowrap">date</td>
-                                                    <td class="text-wrap">Tue, 09 Jun 2026 10:38:01 GMT</td>
+                                                    <td class="text-wrap">Thu, 18 Jun 2026 12:21:27 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">server</td>
@@ -1118,10 +1023,10 @@ Internal Server Error
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-f32efbb1-940d-4221-9641-827c404726da" class="prettyPrint">{&quot;reading_id&quot;:&quot;R-20260609-0001&quot;,&quot;device_id&quot;:&quot;ESP32-LAB-A01&quot;,&quot;metric&quot;:&quot;temperature&quot;,&quot;accepted&quot;:true,&quot;created_at&quot;:&quot;2026-06-09T10:38:01+00:00&quot;}</code></pre>
+                                                <pre><code id="copyText-e7798490-9b20-44ab-84e7-0211277550d1" class="prettyPrint">{&quot;reading_id&quot;:&quot;R-20260618-0007&quot;,&quot;device_id&quot;:&quot;ESP32-LAB-A01&quot;,&quot;metric&quot;:&quot;temperature&quot;,&quot;accepted&quot;:true,&quot;created_at&quot;:&quot;2026-06-18T12:21:28+00:00&quot;}</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-f32efbb1-940d-4221-9641-827c404726da">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-e7798490-9b20-44ab-84e7-0211277550d1">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -1192,16 +1097,16 @@ Internal Server Error
                 </div>
             </div>
             </div>
-            <div id="folder-573c939a-be4b-4f4f-b625-07203dbd0795" class="card-deck iteration-0">
+            <div id="folder-27e27075-471e-42a4-bd79-276978dcb2b1" class="card-deck iteration-0">
             <div class="row iteration-0">
                 <div class="col-sm-12 mb-3 iteration-0">
                 <div class="card iteration-0">
                     <div class="card-header  bg-success iteration-0">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-573c939a-be4b-4f4f-b625-07203dbd0795" aria-expanded="false" aria-controls="collapse" id="requests-573c939a-be4b-4f4f-b625-07203dbd0795" class="collapsed text-white z-block">
+                        <a data-toggle="collapse" href="#" data-target="#collapse-27e27075-471e-42a4-bd79-276978dcb2b1" aria-expanded="false" aria-controls="collapse" id="requests-27e27075-471e-42a4-bd79-276978dcb2b1" class="collapsed text-white z-block">
                     Iteration: 1 - GET latest readings returns items array <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-573c939a-be4b-4f4f-b625-07203dbd0795" class="collapse" aria-labelledby="requests-573c939a-be4b-4f4f-b625-07203dbd0795">
+                    <div id="collapse-27e27075-471e-42a4-bd79-276978dcb2b1" class="collapse" aria-labelledby="requests-27e27075-471e-42a4-bd79-276978dcb2b1">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -1217,8 +1122,8 @@ Internal Server Error
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
                                     <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 200 - OK</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 10ms</span><br>
-                                    <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 206B</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 3ms</span><br>
+                                    <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 986B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
                                     <div>
@@ -1261,7 +1166,7 @@ Internal Server Error
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">d3275aec-1270-4de9-8605-49663cc43fb8</td>
+                                                        <td class="text-wrap">8284eb73-0473-4143-8afd-9aa725ecab19</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -1295,7 +1200,7 @@ Internal Server Error
                                             <tbody>
                                                 <tr>
                                                     <td class="text-nowrap">date</td>
-                                                    <td class="text-wrap">Tue, 09 Jun 2026 10:38:01 GMT</td>
+                                                    <td class="text-wrap">Thu, 18 Jun 2026 12:21:27 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">server</td>
@@ -1303,7 +1208,7 @@ Internal Server Error
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">content-length</td>
-                                                    <td class="text-wrap">206</td>
+                                                    <td class="text-wrap">986</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">content-type</td>
@@ -1324,10 +1229,10 @@ Internal Server Error
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-5d7e7e5e-2f18-4095-8ee6-186baef96e7f" class="prettyPrint">{&quot;items&quot;:[{&quot;reading_id&quot;:&quot;R-20260609-0001&quot;,&quot;device_id&quot;:&quot;ESP32-LAB-A01&quot;,&quot;metric&quot;:&quot;temperature&quot;,&quot;value&quot;:31.5,&quot;unit&quot;:&quot;celsius&quot;,&quot;timestamp&quot;:&quot;2026-05-13T08:30:00+07:00&quot;,&quot;created_at&quot;:&quot;2026-06-09T10:38:01+00:00&quot;}]}</code></pre>
+                                                <pre><code id="copyText-1d7334f1-4561-4337-adf6-02e8496c29c1" class="prettyPrint">{&quot;items&quot;:[{&quot;reading_id&quot;:&quot;R-20260618-0003&quot;,&quot;device_id&quot;:&quot;ESP32-LAB-A01&quot;,&quot;metric&quot;:&quot;temperature&quot;,&quot;value&quot;:31.5,&quot;unit&quot;:&quot;celsius&quot;,&quot;timestamp&quot;:&quot;2026-05-13T08:30:00+07:00&quot;,&quot;created_at&quot;:&quot;2026-06-18T12:15:02+00:00&quot;},{&quot;reading_id&quot;:&quot;R-20260618-0004&quot;,&quot;device_id&quot;:&quot;ESP32-LAB-A01&quot;,&quot;metric&quot;:&quot;temperature&quot;,&quot;value&quot;:80.0,&quot;unit&quot;:&quot;celsius&quot;,&quot;timestamp&quot;:&quot;2026-05-13T08:30:00+07:00&quot;,&quot;created_at&quot;:&quot;2026-06-18T12:15:03+00:00&quot;},{&quot;reading_id&quot;:&quot;R-20260618-0005&quot;,&quot;device_id&quot;:&quot;ESP32-LAB-A01&quot;,&quot;metric&quot;:&quot;temperature&quot;,&quot;value&quot;:31.5,&quot;unit&quot;:&quot;celsius&quot;,&quot;timestamp&quot;:&quot;2026-05-13T08:30:00+07:00&quot;,&quot;created_at&quot;:&quot;2026-06-18T12:18:56+00:00&quot;},{&quot;reading_id&quot;:&quot;R-20260618-0006&quot;,&quot;device_id&quot;:&quot;ESP32-LAB-A01&quot;,&quot;metric&quot;:&quot;temperature&quot;,&quot;value&quot;:80.0,&quot;unit&quot;:&quot;celsius&quot;,&quot;timestamp&quot;:&quot;2026-05-13T08:30:00+07:00&quot;,&quot;created_at&quot;:&quot;2026-06-18T12:18:57+00:00&quot;},{&quot;reading_id&quot;:&quot;R-20260618-0007&quot;,&quot;device_id&quot;:&quot;ESP32-LAB-A01&quot;,&quot;metric&quot;:&quot;temperature&quot;,&quot;value&quot;:31.5,&quot;unit&quot;:&quot;celsius&quot;,&quot;timestamp&quot;:&quot;2026-05-13T08:30:00+07:00&quot;,&quot;created_at&quot;:&quot;2026-06-18T12:21:28+00:00&quot;}]}</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-5d7e7e5e-2f18-4095-8ee6-186baef96e7f">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-1d7334f1-4561-4337-adf6-02e8496c29c1">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -1392,16 +1297,16 @@ Internal Server Error
                 </div>
             </div>
             </div>
-            <div id="folder-6b4013c8-cace-4cdc-98ec-38764a5d0ad0" class="card-deck iteration-0">
+            <div id="folder-28e4f72d-2fde-4dc2-8c04-a645566df85a" class="card-deck iteration-0">
             <div class="row iteration-0">
                 <div class="col-sm-12 mb-3 iteration-0">
                 <div class="card iteration-0">
                     <div class="card-header  bg-success iteration-0">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-6b4013c8-cace-4cdc-98ec-38764a5d0ad0" aria-expanded="false" aria-controls="collapse" id="requests-6b4013c8-cace-4cdc-98ec-38764a5d0ad0" class="collapsed text-white z-block">
+                        <a data-toggle="collapse" href="#" data-target="#collapse-28e4f72d-2fde-4dc2-8c04-a645566df85a" aria-expanded="false" aria-controls="collapse" id="requests-28e4f72d-2fde-4dc2-8c04-a645566df85a" class="collapsed text-white z-block">
                     Iteration: 1 - GET reading by saved reading_id returns 200 <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-6b4013c8-cace-4cdc-98ec-38764a5d0ad0" class="collapse" aria-labelledby="requests-6b4013c8-cace-4cdc-98ec-38764a5d0ad0">
+                    <div id="collapse-28e4f72d-2fde-4dc2-8c04-a645566df85a" class="collapse" aria-labelledby="requests-28e4f72d-2fde-4dc2-8c04-a645566df85a">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -1410,14 +1315,14 @@ Internal Server Error
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Request Information</h5>
                                     <span><i class="fas fa-info-circle"></i></span><strong> Request Method:</strong> <span class="badge-outline-success badge badge-success"> GET</span><br>
-                                    <span><i class="fas fa-info-circle"></i></span><strong> Request URL:</strong> <a href="http://localhost:8000/readings/R-20260609-0001" target="_blank">http://localhost:8000/readings/R-20260609-0001</a><br>
+                                    <span><i class="fas fa-info-circle"></i></span><strong> Request URL:</strong> <a href="http://localhost:8000/readings/R-20260618-0007" target="_blank">http://localhost:8000/readings/R-20260618-0007</a><br>
                                     </div>
                                 </div>
                                 <div class="card border-info" style="width: 50rem;">
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
                                     <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 200 - OK</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 15ms</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 3ms</span><br>
                                     <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 194B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
@@ -1461,7 +1366,7 @@ Internal Server Error
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">f9eae3e3-cd06-46a8-9c55-b7c154fb02b6</td>
+                                                        <td class="text-wrap">e070a501-3810-484f-b0b2-4e62a84b703d</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -1495,7 +1400,7 @@ Internal Server Error
                                             <tbody>
                                                 <tr>
                                                     <td class="text-nowrap">date</td>
-                                                    <td class="text-wrap">Tue, 09 Jun 2026 10:38:01 GMT</td>
+                                                    <td class="text-wrap">Thu, 18 Jun 2026 12:21:27 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">server</td>
@@ -1524,10 +1429,10 @@ Internal Server Error
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-a3d8f75c-e767-4cd3-9639-4823f6490977" class="prettyPrint">{&quot;reading_id&quot;:&quot;R-20260609-0001&quot;,&quot;device_id&quot;:&quot;ESP32-LAB-A01&quot;,&quot;metric&quot;:&quot;temperature&quot;,&quot;value&quot;:31.5,&quot;unit&quot;:&quot;celsius&quot;,&quot;timestamp&quot;:&quot;2026-05-13T08:30:00+07:00&quot;,&quot;created_at&quot;:&quot;2026-06-09T10:38:01+00:00&quot;}</code></pre>
+                                                <pre><code id="copyText-ef048d63-4b32-4add-9689-0be99d1b5e31" class="prettyPrint">{&quot;reading_id&quot;:&quot;R-20260618-0007&quot;,&quot;device_id&quot;:&quot;ESP32-LAB-A01&quot;,&quot;metric&quot;:&quot;temperature&quot;,&quot;value&quot;:31.5,&quot;unit&quot;:&quot;celsius&quot;,&quot;timestamp&quot;:&quot;2026-05-13T08:30:00+07:00&quot;,&quot;created_at&quot;:&quot;2026-06-18T12:21:28+00:00&quot;}</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-a3d8f75c-e767-4cd3-9639-4823f6490977">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-ef048d63-4b32-4add-9689-0be99d1b5e31">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -1594,22 +1499,22 @@ Internal Server Error
             </div>
         </div>
         <div class="alert alert-dark text-uppercase text-center iteration-0">
-        <a data-toggle="collapse" href="#" data-target="#folder-collapse-c96e93ab-6ae7-4017-9edd-83dd871e0d83-iteration-0" aria-expanded="false" aria-controls="collapse" id="folder-c96e93ab-6ae7-4017-9edd-83dd871e0d83-iteration-0" class="collapsed text-dark z-block">
-        <i class="fas fa-info-circle float-left resultsInfoPass"  style="color: #c24a3f; padding-top: 4px;" style="color: #c24a3f; padding-top: 4px;"></i>
+        <a data-toggle="collapse" href="#" data-target="#folder-collapse-6815dadb-1d25-4318-910e-9dfeca19323d-iteration-0" aria-expanded="false" aria-controls="collapse" id="folder-6815dadb-1d25-4318-910e-9dfeca19323d-iteration-0" class="collapsed text-dark z-block">
+        <i class="fas fa-info-circle float-left resultsInfoPass" ></i>
             02_Auth - 2 Requests in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
         </a>
         </div>
-        <div id="folder-collapse-c96e93ab-6ae7-4017-9edd-83dd871e0d83-iteration-0" class="collapse" aria-labelledby="folder-c96e93ab-6ae7-4017-9edd-83dd871e0d83">
-            <div id="folder-4c542d18-d6bd-405a-b6c4-a871ca908564" class="card-deck iteration-0">
+        <div id="folder-collapse-6815dadb-1d25-4318-910e-9dfeca19323d-iteration-0" class="collapse" aria-labelledby="folder-6815dadb-1d25-4318-910e-9dfeca19323d">
+            <div id="folder-e61cb82e-3dea-4cc2-84b0-f52c1f324ce0" class="card-deck iteration-0">
             <div class="row iteration-0">
                 <div class="col-sm-12 mb-3 iteration-0">
                 <div class="card iteration-0">
-                    <div class="card-header  bg-danger iteration-0">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-4c542d18-d6bd-405a-b6c4-a871ca908564" aria-expanded="false" aria-controls="collapse" id="requests-4c542d18-d6bd-405a-b6c4-a871ca908564" class="collapsed text-white z-block">
+                    <div class="card-header  bg-success iteration-0">
+                        <a data-toggle="collapse" href="#" data-target="#collapse-e61cb82e-3dea-4cc2-84b0-f52c1f324ce0" aria-expanded="false" aria-controls="collapse" id="requests-e61cb82e-3dea-4cc2-84b0-f52c1f324ce0" class="collapsed text-white z-block">
                     Iteration: 1 - POST reading without token returns 401 <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-4c542d18-d6bd-405a-b6c4-a871ca908564" class="collapse" aria-labelledby="requests-4c542d18-d6bd-405a-b6c4-a871ca908564">
+                    <div id="collapse-e61cb82e-3dea-4cc2-84b0-f52c1f324ce0" class="collapse" aria-labelledby="requests-e61cb82e-3dea-4cc2-84b0-f52c1f324ce0">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -1624,15 +1529,15 @@ Internal Server Error
                                 <div class="card border-info" style="width: 50rem;">
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
-                                    <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 500 - Internal Server Error</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 114ms</span><br>
-                                    <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 21B</span><br>
+                                    <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 401 - Unauthorized</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 4ms</span><br>
+                                    <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 159B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
                                     <div>
                                         <div class="progress" style="height: 40px;">
-                                            <div class="progress-bar  bg-danger" style="width: 100%" role="progressbar">
-                                            <h5 style="padding-top:5px;"><strong>0 %</strong></h5>
+                                            <div class="progress-bar  bg-success" style="width: 100%" role="progressbar">
+                                            <h5 style="padding-top:5px;"><strong>100 %</strong></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -1669,7 +1574,7 @@ Internal Server Error
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">79a7033e-f459-42b2-9a85-e98954f44137</td>
+                                                        <td class="text-wrap">c409ad36-724d-4b31-84c6-652610f66910</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -1730,19 +1635,23 @@ Internal Server Error
                                             <tbody>
                                                 <tr>
                                                     <td class="text-nowrap">date</td>
-                                                    <td class="text-wrap">Tue, 09 Jun 2026 10:38:01 GMT</td>
+                                                    <td class="text-wrap">Thu, 18 Jun 2026 12:21:27 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">server</td>
                                                     <td class="text-wrap">uvicorn</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-nowrap">content-length</td>
-                                                    <td class="text-wrap">21</td>
+                                                    <td class="text-nowrap">www-authenticate</td>
+                                                    <td class="text-wrap">Bearer</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">content-type</td>
-                                                    <td class="text-wrap">text/plain; charset&#x3D;utf-8</td>
+                                                    <td class="text-wrap">application/problem+json</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-nowrap">content-length</td>
+                                                    <td class="text-wrap">159</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1759,10 +1668,10 @@ Internal Server Error
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-b3d66cfb-3200-4bb9-a606-6832aad50389" class="prettyPrint">Internal Server Error</code></pre>
+                                                <pre><code id="copyText-87d71eb1-b30e-4368-af35-a9af3f483016" class="prettyPrint">{&quot;type&quot;:&quot;https://smart-campus.local/problems/request-error&quot;,&quot;title&quot;:&quot;Unauthorized&quot;,&quot;status&quot;:401,&quot;detail&quot;:&quot;Missing Authorization header&quot;,&quot;instance&quot;:&quot;/readings&quot;}</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-b3d66cfb-3200-4bb9-a606-6832aad50389">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-87d71eb1-b30e-4368-af35-a9af3f483016">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -1779,22 +1688,22 @@ Internal Server Error
                                             <tbody>
                                                 <tr >
                                                     <td >Missing token returns 401</td>
+                                                    <td class="text-center bg-success">1</td>
                                                     <td class="text-center ">0</td>
-                                                    <td class="text-center bg-danger">1</td>
                                                     <td class="text-center ">0</td>
                                                 </tr>
                                             </tbody>
                                             <tfoot>
                                                 <tr class="bg-light">
                                                     <td><strong>Total</strong></td>
-                                                    <td class="text-center">0</td>
                                                     <td class="text-center">1</td>
+                                                    <td class="text-center">0</td>
                                                     <td class="text-center">0</td>
                                                 </tr>
                                             </tfoot>
                                         </table>
                                     </div>
-                                    <div class="row ">
+                                    <div class="row d-none">
                                     <div class="col-sm-12 mb-3">
                                         <div class="card-deck">
                                         <div class="card border-danger" style="width: 50rem;">
@@ -1804,10 +1713,6 @@ Internal Server Error
                                                     <table class="table table-hover">
                                                     <thead><tr class="text-nowrap"><th>Test Name</th><th>Assertion Error</th></tr></thead>
                                                         <tbody>
-                                                            <tr>
-                                                                <td class="w-45 text-nowrap ">Missing token returns 401</td>
-                                                                <td class="w-55"><pre><code >expected response to have status code 401 but got 500</code></pre></td>
-                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
@@ -1825,16 +1730,16 @@ Internal Server Error
                 </div>
             </div>
             </div>
-            <div id="folder-9d3bbbbd-5b11-4d63-886b-a2e5514d8257" class="card-deck iteration-0">
+            <div id="folder-b26662a9-a549-42cb-810c-f62d88c5200b" class="card-deck iteration-0">
             <div class="row iteration-0">
                 <div class="col-sm-12 mb-3 iteration-0">
                 <div class="card iteration-0">
-                    <div class="card-header  bg-danger iteration-0">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-9d3bbbbd-5b11-4d63-886b-a2e5514d8257" aria-expanded="false" aria-controls="collapse" id="requests-9d3bbbbd-5b11-4d63-886b-a2e5514d8257" class="collapsed text-white z-block">
+                    <div class="card-header  bg-success iteration-0">
+                        <a data-toggle="collapse" href="#" data-target="#collapse-b26662a9-a549-42cb-810c-f62d88c5200b" aria-expanded="false" aria-controls="collapse" id="requests-b26662a9-a549-42cb-810c-f62d88c5200b" class="collapsed text-white z-block">
                     Iteration: 1 - POST reading with wrong token returns 401 <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-9d3bbbbd-5b11-4d63-886b-a2e5514d8257" class="collapse" aria-labelledby="requests-9d3bbbbd-5b11-4d63-886b-a2e5514d8257">
+                    <div id="collapse-b26662a9-a549-42cb-810c-f62d88c5200b" class="collapse" aria-labelledby="requests-b26662a9-a549-42cb-810c-f62d88c5200b">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -1849,15 +1754,15 @@ Internal Server Error
                                 <div class="card border-info" style="width: 50rem;">
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
-                                    <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 500 - Internal Server Error</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 20ms</span><br>
-                                    <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 21B</span><br>
+                                    <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 401 - Unauthorized</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 4ms</span><br>
+                                    <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 151B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
                                     <div>
                                         <div class="progress" style="height: 40px;">
-                                            <div class="progress-bar  bg-danger" style="width: 100%" role="progressbar">
-                                            <h5 style="padding-top:5px;"><strong>0 %</strong></h5>
+                                            <div class="progress-bar  bg-success" style="width: 100%" role="progressbar">
+                                            <h5 style="padding-top:5px;"><strong>100 %</strong></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -1898,7 +1803,7 @@ Internal Server Error
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">c3144f7f-a9a6-4cc3-94d0-b17e445f95ea</td>
+                                                        <td class="text-wrap">ad675707-05e9-4e5a-b3be-10439c3fb564</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -1959,19 +1864,23 @@ Internal Server Error
                                             <tbody>
                                                 <tr>
                                                     <td class="text-nowrap">date</td>
-                                                    <td class="text-wrap">Tue, 09 Jun 2026 10:38:01 GMT</td>
+                                                    <td class="text-wrap">Thu, 18 Jun 2026 12:21:27 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">server</td>
                                                     <td class="text-wrap">uvicorn</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-nowrap">content-length</td>
-                                                    <td class="text-wrap">21</td>
+                                                    <td class="text-nowrap">www-authenticate</td>
+                                                    <td class="text-wrap">Bearer</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">content-type</td>
-                                                    <td class="text-wrap">text/plain; charset&#x3D;utf-8</td>
+                                                    <td class="text-wrap">application/problem+json</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-nowrap">content-length</td>
+                                                    <td class="text-wrap">151</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1988,10 +1897,10 @@ Internal Server Error
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-d7d52c98-e591-45af-93b2-7b49a9d0d668" class="prettyPrint">Internal Server Error</code></pre>
+                                                <pre><code id="copyText-40d1c058-31c1-4a6a-b2c2-fb073c089bfb" class="prettyPrint">{&quot;type&quot;:&quot;https://smart-campus.local/problems/request-error&quot;,&quot;title&quot;:&quot;Unauthorized&quot;,&quot;status&quot;:401,&quot;detail&quot;:&quot;Invalid bearer token&quot;,&quot;instance&quot;:&quot;/readings&quot;}</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-d7d52c98-e591-45af-93b2-7b49a9d0d668">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-40d1c058-31c1-4a6a-b2c2-fb073c089bfb">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -2008,22 +1917,22 @@ Internal Server Error
                                             <tbody>
                                                 <tr >
                                                     <td >Wrong token returns 401</td>
+                                                    <td class="text-center bg-success">1</td>
                                                     <td class="text-center ">0</td>
-                                                    <td class="text-center bg-danger">1</td>
                                                     <td class="text-center ">0</td>
                                                 </tr>
                                             </tbody>
                                             <tfoot>
                                                 <tr class="bg-light">
                                                     <td><strong>Total</strong></td>
-                                                    <td class="text-center">0</td>
                                                     <td class="text-center">1</td>
+                                                    <td class="text-center">0</td>
                                                     <td class="text-center">0</td>
                                                 </tr>
                                             </tfoot>
                                         </table>
                                     </div>
-                                    <div class="row ">
+                                    <div class="row d-none">
                                     <div class="col-sm-12 mb-3">
                                         <div class="card-deck">
                                         <div class="card border-danger" style="width: 50rem;">
@@ -2033,10 +1942,6 @@ Internal Server Error
                                                     <table class="table table-hover">
                                                     <thead><tr class="text-nowrap"><th>Test Name</th><th>Assertion Error</th></tr></thead>
                                                         <tbody>
-                                                            <tr>
-                                                                <td class="w-45 text-nowrap ">Wrong token returns 401</td>
-                                                                <td class="w-55"><pre><code >expected response to have status code 401 but got 500</code></pre></td>
-                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
@@ -2056,22 +1961,22 @@ Internal Server Error
             </div>
         </div>
         <div class="alert alert-dark text-uppercase text-center iteration-0">
-        <a data-toggle="collapse" href="#" data-target="#folder-collapse-becb648a-ec88-4f96-b3cc-0da832288f8c-iteration-0" aria-expanded="false" aria-controls="collapse" id="folder-becb648a-ec88-4f96-b3cc-0da832288f8c-iteration-0" class="collapsed text-dark z-block">
+        <a data-toggle="collapse" href="#" data-target="#folder-collapse-fd7d98d6-ca49-4370-8a5c-d20b8cb053b6-iteration-0" aria-expanded="false" aria-controls="collapse" id="folder-fd7d98d6-ca49-4370-8a5c-d20b8cb053b6-iteration-0" class="collapsed text-dark z-block">
         <i class="fas fa-info-circle float-left resultsInfoPass" ></i>
             03_Negative - 2 Requests in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
         </a>
         </div>
-        <div id="folder-collapse-becb648a-ec88-4f96-b3cc-0da832288f8c-iteration-0" class="collapse" aria-labelledby="folder-becb648a-ec88-4f96-b3cc-0da832288f8c">
-            <div id="folder-9599dc2b-9517-4509-9782-9902cd17bef5" class="card-deck iteration-0">
+        <div id="folder-collapse-fd7d98d6-ca49-4370-8a5c-d20b8cb053b6-iteration-0" class="collapse" aria-labelledby="folder-fd7d98d6-ca49-4370-8a5c-d20b8cb053b6">
+            <div id="folder-251c1bd4-8cf5-4b16-8155-20429c30feba" class="card-deck iteration-0">
             <div class="row iteration-0">
                 <div class="col-sm-12 mb-3 iteration-0">
                 <div class="card iteration-0">
                     <div class="card-header  bg-success iteration-0">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-9599dc2b-9517-4509-9782-9902cd17bef5" aria-expanded="false" aria-controls="collapse" id="requests-9599dc2b-9517-4509-9782-9902cd17bef5" class="collapsed text-white z-block">
+                        <a data-toggle="collapse" href="#" data-target="#collapse-251c1bd4-8cf5-4b16-8155-20429c30feba" aria-expanded="false" aria-controls="collapse" id="requests-251c1bd4-8cf5-4b16-8155-20429c30feba" class="collapsed text-white z-block">
                     Iteration: 1 - POST reading missing device_id returns validation error <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-9599dc2b-9517-4509-9782-9902cd17bef5" class="collapse" aria-labelledby="requests-9599dc2b-9517-4509-9782-9902cd17bef5">
+                    <div id="collapse-251c1bd4-8cf5-4b16-8155-20429c30feba" class="collapse" aria-labelledby="requests-251c1bd4-8cf5-4b16-8155-20429c30feba">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -2087,7 +1992,7 @@ Internal Server Error
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
                                     <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 422 - Unprocessable Entity</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 11ms</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 3ms</span><br>
                                     <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 168B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
@@ -2135,7 +2040,7 @@ Internal Server Error
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">014e90d5-309b-4ab0-91d4-82994f432d41</td>
+                                                        <td class="text-wrap">acda45fc-b591-4b22-9f4d-6d9b67c83463</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -2195,7 +2100,7 @@ Internal Server Error
                                             <tbody>
                                                 <tr>
                                                     <td class="text-nowrap">date</td>
-                                                    <td class="text-wrap">Tue, 09 Jun 2026 10:38:01 GMT</td>
+                                                    <td class="text-wrap">Thu, 18 Jun 2026 12:21:28 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">server</td>
@@ -2224,10 +2129,10 @@ Internal Server Error
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-50fbedde-3fb9-4f85-912a-66a402d92086" class="prettyPrint">{&quot;type&quot;:&quot;https://smart-campus.local/problems/validation-error&quot;,&quot;title&quot;:&quot;Validation error&quot;,&quot;status&quot;:422,&quot;detail&quot;:&quot;body.device_id: Field required&quot;,&quot;instance&quot;:&quot;/readings&quot;}</code></pre>
+                                                <pre><code id="copyText-186d08a6-7a74-415e-8acd-c0263a5bcd0e" class="prettyPrint">{&quot;type&quot;:&quot;https://smart-campus.local/problems/validation-error&quot;,&quot;title&quot;:&quot;Validation error&quot;,&quot;status&quot;:422,&quot;detail&quot;:&quot;body.device_id: Field required&quot;,&quot;instance&quot;:&quot;/readings&quot;}</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-50fbedde-3fb9-4f85-912a-66a402d92086">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-186d08a6-7a74-415e-8acd-c0263a5bcd0e">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -2286,16 +2191,16 @@ Internal Server Error
                 </div>
             </div>
             </div>
-            <div id="folder-6f682e7a-4c11-46c4-9149-bf6fd09c3680" class="card-deck iteration-0">
+            <div id="folder-0bba5aba-624c-4af7-87fa-c990c4dfd13a" class="card-deck iteration-0">
             <div class="row iteration-0">
                 <div class="col-sm-12 mb-3 iteration-0">
                 <div class="card iteration-0">
                     <div class="card-header  bg-success iteration-0">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-6f682e7a-4c11-46c4-9149-bf6fd09c3680" aria-expanded="false" aria-controls="collapse" id="requests-6f682e7a-4c11-46c4-9149-bf6fd09c3680" class="collapsed text-white z-block">
+                        <a data-toggle="collapse" href="#" data-target="#collapse-0bba5aba-624c-4af7-87fa-c990c4dfd13a" aria-expanded="false" aria-controls="collapse" id="requests-0bba5aba-624c-4af7-87fa-c990c4dfd13a" class="collapsed text-white z-block">
                     Iteration: 1 - POST reading with value as string returns validation error <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-6f682e7a-4c11-46c4-9149-bf6fd09c3680" class="collapse" aria-labelledby="requests-6f682e7a-4c11-46c4-9149-bf6fd09c3680">
+                    <div id="collapse-0bba5aba-624c-4af7-87fa-c990c4dfd13a" class="collapse" aria-labelledby="requests-0bba5aba-624c-4af7-87fa-c990c4dfd13a">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -2311,7 +2216,7 @@ Internal Server Error
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
                                     <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 422 - Unprocessable Entity</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 6ms</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 3ms</span><br>
                                     <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 216B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
@@ -2359,7 +2264,7 @@ Internal Server Error
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">010141c4-ea83-4c3e-b79f-edf6ec36623a</td>
+                                                        <td class="text-wrap">0a3befbd-53a1-4dff-aa26-a303cd908379</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -2420,7 +2325,7 @@ Internal Server Error
                                             <tbody>
                                                 <tr>
                                                     <td class="text-nowrap">date</td>
-                                                    <td class="text-wrap">Tue, 09 Jun 2026 10:38:01 GMT</td>
+                                                    <td class="text-wrap">Thu, 18 Jun 2026 12:21:28 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">server</td>
@@ -2449,10 +2354,10 @@ Internal Server Error
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-cbc72764-b622-4d3f-912c-758a24008989" class="prettyPrint">{&quot;type&quot;:&quot;https://smart-campus.local/problems/validation-error&quot;,&quot;title&quot;:&quot;Validation error&quot;,&quot;status&quot;:422,&quot;detail&quot;:&quot;body.value: Input should be a valid number, unable to parse string as a number&quot;,&quot;instance&quot;:&quot;/readings&quot;}</code></pre>
+                                                <pre><code id="copyText-2c4febdb-97e3-44d8-b90b-5936a4eb9833" class="prettyPrint">{&quot;type&quot;:&quot;https://smart-campus.local/problems/validation-error&quot;,&quot;title&quot;:&quot;Validation error&quot;,&quot;status&quot;:422,&quot;detail&quot;:&quot;body.value: Input should be a valid number, unable to parse string as a number&quot;,&quot;instance&quot;:&quot;/readings&quot;}</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-cbc72764-b622-4d3f-912c-758a24008989">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-2c4febdb-97e3-44d8-b90b-5936a4eb9833">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -2513,22 +2418,22 @@ Internal Server Error
             </div>
         </div>
         <div class="alert alert-dark text-uppercase text-center iteration-0">
-        <a data-toggle="collapse" href="#" data-target="#folder-collapse-312923b2-5d19-4045-9dbc-9368a144b535-iteration-0" aria-expanded="false" aria-controls="collapse" id="folder-312923b2-5d19-4045-9dbc-9368a144b535-iteration-0" class="collapsed text-dark z-block">
+        <a data-toggle="collapse" href="#" data-target="#folder-collapse-ab0e4535-d1b9-4d32-9452-3f839d490ce6-iteration-0" aria-expanded="false" aria-controls="collapse" id="folder-ab0e4535-d1b9-4d32-9452-3f839d490ce6-iteration-0" class="collapsed text-dark z-block">
         <i class="fas fa-info-circle float-left resultsInfoPass" ></i>
             04_Boundary_Reliability - 3 Requests in the folder<i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
         </a>
         </div>
-        <div id="folder-collapse-312923b2-5d19-4045-9dbc-9368a144b535-iteration-0" class="collapse" aria-labelledby="folder-312923b2-5d19-4045-9dbc-9368a144b535">
-            <div id="folder-9fe0e80f-9bc1-4fbb-b408-1af41d1a1ee3" class="card-deck iteration-0">
+        <div id="folder-collapse-ab0e4535-d1b9-4d32-9452-3f839d490ce6-iteration-0" class="collapse" aria-labelledby="folder-ab0e4535-d1b9-4d32-9452-3f839d490ce6">
+            <div id="folder-a34d2e29-0448-44e1-96ee-d5781ba52e79" class="card-deck iteration-0">
             <div class="row iteration-0">
                 <div class="col-sm-12 mb-3 iteration-0">
                 <div class="card iteration-0">
                     <div class="card-header  bg-success iteration-0">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-9fe0e80f-9bc1-4fbb-b408-1af41d1a1ee3" aria-expanded="false" aria-controls="collapse" id="requests-9fe0e80f-9bc1-4fbb-b408-1af41d1a1ee3" class="collapsed text-white z-block">
+                        <a data-toggle="collapse" href="#" data-target="#collapse-a34d2e29-0448-44e1-96ee-d5781ba52e79" aria-expanded="false" aria-controls="collapse" id="requests-a34d2e29-0448-44e1-96ee-d5781ba52e79" class="collapsed text-white z-block">
                     Iteration: 1 - POST boundary temperature 80 is accepted with warning <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-9fe0e80f-9bc1-4fbb-b408-1af41d1a1ee3" class="collapse" aria-labelledby="requests-9fe0e80f-9bc1-4fbb-b408-1af41d1a1ee3">
+                    <div id="collapse-a34d2e29-0448-44e1-96ee-d5781ba52e79" class="collapse" aria-labelledby="requests-a34d2e29-0448-44e1-96ee-d5781ba52e79">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -2544,7 +2449,7 @@ Internal Server Error
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
                                     <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 201 - Created</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 8ms</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 3ms</span><br>
                                     <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 140B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
@@ -2592,7 +2497,7 @@ Internal Server Error
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">714c90ac-e7cd-4e07-93b9-32fe18a3765a</td>
+                                                        <td class="text-wrap">92b08a91-2de8-4ded-90eb-b4d6a5510f7f</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -2653,7 +2558,7 @@ Internal Server Error
                                             <tbody>
                                                 <tr>
                                                     <td class="text-nowrap">date</td>
-                                                    <td class="text-wrap">Tue, 09 Jun 2026 10:38:01 GMT</td>
+                                                    <td class="text-wrap">Thu, 18 Jun 2026 12:21:28 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">server</td>
@@ -2686,10 +2591,10 @@ Internal Server Error
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-24d36435-b8a8-4c6f-9cd4-53ebe567714f" class="prettyPrint">{&quot;reading_id&quot;:&quot;R-20260609-0002&quot;,&quot;device_id&quot;:&quot;ESP32-LAB-A01&quot;,&quot;metric&quot;:&quot;temperature&quot;,&quot;accepted&quot;:true,&quot;created_at&quot;:&quot;2026-06-09T10:38:02+00:00&quot;}</code></pre>
+                                                <pre><code id="copyText-e5513676-f1dc-4cca-900a-142873b8f771" class="prettyPrint">{&quot;reading_id&quot;:&quot;R-20260618-0008&quot;,&quot;device_id&quot;:&quot;ESP32-LAB-A01&quot;,&quot;metric&quot;:&quot;temperature&quot;,&quot;accepted&quot;:true,&quot;created_at&quot;:&quot;2026-06-18T12:21:28+00:00&quot;}</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-24d36435-b8a8-4c6f-9cd4-53ebe567714f">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-e5513676-f1dc-4cca-900a-142873b8f771">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -2754,16 +2659,16 @@ Internal Server Error
                 </div>
             </div>
             </div>
-            <div id="folder-0ff3d567-ded8-42a7-ab9e-284458a39cf0" class="card-deck iteration-0">
+            <div id="folder-b37441f5-9b5b-45ec-a098-9774f784b03a" class="card-deck iteration-0">
             <div class="row iteration-0">
                 <div class="col-sm-12 mb-3 iteration-0">
                 <div class="card iteration-0">
                     <div class="card-header  bg-success iteration-0">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-0ff3d567-ded8-42a7-ab9e-284458a39cf0" aria-expanded="false" aria-controls="collapse" id="requests-0ff3d567-ded8-42a7-ab9e-284458a39cf0" class="collapsed text-white z-block">
+                        <a data-toggle="collapse" href="#" data-target="#collapse-b37441f5-9b5b-45ec-a098-9774f784b03a" aria-expanded="false" aria-controls="collapse" id="requests-b37441f5-9b5b-45ec-a098-9774f784b03a" class="collapsed text-white z-block">
                     Iteration: 1 - POST boundary temperature 81 is rejected <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-0ff3d567-ded8-42a7-ab9e-284458a39cf0" class="collapse" aria-labelledby="requests-0ff3d567-ded8-42a7-ab9e-284458a39cf0">
+                    <div id="collapse-b37441f5-9b5b-45ec-a098-9774f784b03a" class="collapse" aria-labelledby="requests-b37441f5-9b5b-45ec-a098-9774f784b03a">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -2779,7 +2684,7 @@ Internal Server Error
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
                                     <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 422 - Unprocessable Entity</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 7ms</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 2ms</span><br>
                                     <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 190B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
@@ -2827,7 +2732,7 @@ Internal Server Error
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">800dcbea-2845-4478-8f61-a1dba53bd230</td>
+                                                        <td class="text-wrap">44856dda-662c-4da9-bd8e-b8c9dc1f0d91</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -2888,7 +2793,7 @@ Internal Server Error
                                             <tbody>
                                                 <tr>
                                                     <td class="text-nowrap">date</td>
-                                                    <td class="text-wrap">Tue, 09 Jun 2026 10:38:02 GMT</td>
+                                                    <td class="text-wrap">Thu, 18 Jun 2026 12:21:28 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">server</td>
@@ -2917,10 +2822,10 @@ Internal Server Error
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-c9baef09-6b96-4f6b-8f03-d1921a7748e7" class="prettyPrint">{&quot;type&quot;:&quot;https://smart-campus.local/problems/validation-error&quot;,&quot;title&quot;:&quot;Validation error&quot;,&quot;status&quot;:422,&quot;detail&quot;:&quot;body.value: Input should be less than or equal to 80&quot;,&quot;instance&quot;:&quot;/readings&quot;}</code></pre>
+                                                <pre><code id="copyText-1842b516-ac8c-4c37-8ac3-9ee89df215a1" class="prettyPrint">{&quot;type&quot;:&quot;https://smart-campus.local/problems/validation-error&quot;,&quot;title&quot;:&quot;Validation error&quot;,&quot;status&quot;:422,&quot;detail&quot;:&quot;body.value: Input should be less than or equal to 80&quot;,&quot;instance&quot;:&quot;/readings&quot;}</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-c9baef09-6b96-4f6b-8f03-d1921a7748e7">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-1842b516-ac8c-4c37-8ac3-9ee89df215a1">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -2979,16 +2884,16 @@ Internal Server Error
                 </div>
             </div>
             </div>
-            <div id="folder-39b623cc-bd58-4421-a4b0-577c09cf9a8e" class="card-deck iteration-0">
+            <div id="folder-c1f0c307-2d32-4a46-8e88-e10b04bb48ae" class="card-deck iteration-0">
             <div class="row iteration-0">
                 <div class="col-sm-12 mb-3 iteration-0">
                 <div class="card iteration-0">
                     <div class="card-header  bg-success iteration-0">
-                        <a data-toggle="collapse" href="#" data-target="#collapse-39b623cc-bd58-4421-a4b0-577c09cf9a8e" aria-expanded="false" aria-controls="collapse" id="requests-39b623cc-bd58-4421-a4b0-577c09cf9a8e" class="collapsed text-white z-block">
+                        <a data-toggle="collapse" href="#" data-target="#collapse-c1f0c307-2d32-4a46-8e88-e10b04bb48ae" aria-expanded="false" aria-controls="collapse" id="requests-c1f0c307-2d32-4a46-8e88-e10b04bb48ae" class="collapsed text-white z-block">
                     Iteration: 1 - GET health responds under 1000ms on local/container <i class="float-lg-right fa fa-chevron-down" style="padding-top: 5px;"></i>
                 </a>
                     </div>
-                    <div id="collapse-39b623cc-bd58-4421-a4b0-577c09cf9a8e" class="collapse" aria-labelledby="requests-39b623cc-bd58-4421-a4b0-577c09cf9a8e">
+                    <div id="collapse-c1f0c307-2d32-4a46-8e88-e10b04bb48ae" class="collapse" aria-labelledby="requests-c1f0c307-2d32-4a46-8e88-e10b04bb48ae">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3">
@@ -3004,7 +2909,7 @@ Internal Server Error
                                     <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Information</h5>
                                     <span><i class="fas fa-info-circle"></i></span><strong> Response Code:</strong> <span class="float-right badge-outline badge badge-success"> 200 - OK</span><br>
-                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 4ms</span><br>
+                                    <span><i class="fas fa-stopwatch"></i></span><strong> Mean time per request:</strong> <span class="float-right badge-outline badge badge-success"> 3ms</span><br>
                                     <span><i class="fas fa-database"></i></span><strong> Mean size per request:</strong> <span class="float-right badge-outline badge badge-success"> 59B</span><br>
                                     <hr>
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Test Pass Percentage</h5>
@@ -3044,7 +2949,7 @@ Internal Server Error
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Postman-Token</td>
-                                                        <td class="text-wrap">0491eef2-d5db-4788-8296-61bc35f248fe</td>
+                                                        <td class="text-wrap">37a4636c-b9cf-47a6-94fb-f8b2be14d7db</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-nowrap">Host</td>
@@ -3078,7 +2983,7 @@ Internal Server Error
                                             <tbody>
                                                 <tr>
                                                     <td class="text-nowrap">date</td>
-                                                    <td class="text-wrap">Tue, 09 Jun 2026 10:38:02 GMT</td>
+                                                    <td class="text-wrap">Thu, 18 Jun 2026 12:21:28 GMT</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-nowrap">server</td>
@@ -3107,10 +3012,10 @@ Internal Server Error
                                 <div class="card-body">
                                     <h5 class="card-title text-uppercase text-white text-center bg-info">Response Body</h5>
                                         <div class="dyn-height">
-                                                <pre><code id="copyText-872e2e11-74e4-43fd-b40a-69c8168fe1a8" class="prettyPrint">{&quot;status&quot;:&quot;ok&quot;,&quot;service&quot;:&quot;iot-ingestion&quot;,&quot;version&quot;:&quot;0.4.0&quot;}</code></pre>
+                                                <pre><code id="copyText-0388ea38-3669-4bbd-8f4b-b321f92fd3f2" class="prettyPrint">{&quot;status&quot;:&quot;ok&quot;,&quot;service&quot;:&quot;iot-ingestion&quot;,&quot;version&quot;:&quot;0.4.0&quot;}</code></pre>
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-872e2e11-74e4-43fd-b40a-69c8168fe1a8">Copy to Clipboard</button>
+                                            <button class="btn btn-outline-secondary btn-sm copyButton" type="button" data-clipboard-action="copy" data-clipboard-target="#copyText-0388ea38-3669-4bbd-8f4b-b321f92fd3f2">Copy to Clipboard</button>
                                         </div>
                                 </div>
                             </div>
@@ -3242,25 +3147,25 @@ $('#openAll').on('click', function(e) {
 let clickCount = $(this).data("clickCount") || 1
 switch (clickCount){
     case 1:
-            $('#folder-8ea6f4f3-2711-41bb-a36b-0f59ac0dd193-iteration-0').removeClass('collapsed')
-            $('#folder-collapse-8ea6f4f3-2711-41bb-a36b-0f59ac0dd193-iteration-0').addClass('show')
-            $('#folder-c96e93ab-6ae7-4017-9edd-83dd871e0d83-iteration-0').removeClass('collapsed')
-            $('#folder-collapse-c96e93ab-6ae7-4017-9edd-83dd871e0d83-iteration-0').addClass('show')
-            $('#folder-becb648a-ec88-4f96-b3cc-0da832288f8c-iteration-0').removeClass('collapsed')
-            $('#folder-collapse-becb648a-ec88-4f96-b3cc-0da832288f8c-iteration-0').addClass('show')
-            $('#folder-312923b2-5d19-4045-9dbc-9368a144b535-iteration-0').removeClass('collapsed')
-            $('#folder-collapse-312923b2-5d19-4045-9dbc-9368a144b535-iteration-0').addClass('show')
+            $('#folder-3e8baec1-4898-4b99-97ef-77b1c68dfbfb-iteration-0').removeClass('collapsed')
+            $('#folder-collapse-3e8baec1-4898-4b99-97ef-77b1c68dfbfb-iteration-0').addClass('show')
+            $('#folder-6815dadb-1d25-4318-910e-9dfeca19323d-iteration-0').removeClass('collapsed')
+            $('#folder-collapse-6815dadb-1d25-4318-910e-9dfeca19323d-iteration-0').addClass('show')
+            $('#folder-fd7d98d6-ca49-4370-8a5c-d20b8cb053b6-iteration-0').removeClass('collapsed')
+            $('#folder-collapse-fd7d98d6-ca49-4370-8a5c-d20b8cb053b6-iteration-0').addClass('show')
+            $('#folder-ab0e4535-d1b9-4d32-9452-3f839d490ce6-iteration-0').removeClass('collapsed')
+            $('#folder-collapse-ab0e4535-d1b9-4d32-9452-3f839d490ce6-iteration-0').addClass('show')
         $('#openAll').html("Collapse Folders");
         break;
     case 2:
-            $('#folder-8ea6f4f3-2711-41bb-a36b-0f59ac0dd193-iteration-0').addClass('collapsed')
-            $('#folder-collapse-8ea6f4f3-2711-41bb-a36b-0f59ac0dd193-iteration-0').removeClass('show')
-            $('#folder-c96e93ab-6ae7-4017-9edd-83dd871e0d83-iteration-0').addClass('collapsed')
-            $('#folder-collapse-c96e93ab-6ae7-4017-9edd-83dd871e0d83-iteration-0').removeClass('show')
-            $('#folder-becb648a-ec88-4f96-b3cc-0da832288f8c-iteration-0').addClass('collapsed')
-            $('#folder-collapse-becb648a-ec88-4f96-b3cc-0da832288f8c-iteration-0').removeClass('show')
-            $('#folder-312923b2-5d19-4045-9dbc-9368a144b535-iteration-0').addClass('collapsed')
-            $('#folder-collapse-312923b2-5d19-4045-9dbc-9368a144b535-iteration-0').removeClass('show')
+            $('#folder-3e8baec1-4898-4b99-97ef-77b1c68dfbfb-iteration-0').addClass('collapsed')
+            $('#folder-collapse-3e8baec1-4898-4b99-97ef-77b1c68dfbfb-iteration-0').removeClass('show')
+            $('#folder-6815dadb-1d25-4318-910e-9dfeca19323d-iteration-0').addClass('collapsed')
+            $('#folder-collapse-6815dadb-1d25-4318-910e-9dfeca19323d-iteration-0').removeClass('show')
+            $('#folder-fd7d98d6-ca49-4370-8a5c-d20b8cb053b6-iteration-0').addClass('collapsed')
+            $('#folder-collapse-fd7d98d6-ca49-4370-8a5c-d20b8cb053b6-iteration-0').removeClass('show')
+            $('#folder-ab0e4535-d1b9-4d32-9452-3f839d490ce6-iteration-0').addClass('collapsed')
+            $('#folder-collapse-ab0e4535-d1b9-4d32-9452-3f839d490ce6-iteration-0').removeClass('show')
         $('#openAll').html("Expand Folders");
         break;
 }
@@ -3276,97 +3181,97 @@ $('#openAllRequests').on('click', function(e) {
 let clickCount = $(this).data("clickCount") || 1
 switch (clickCount){
     case 1:
-            $('#requests-3b0a7828-2034-459e-be3d-16a2af6182b0').removeClass('collapsed')
-            $('#collapse-3b0a7828-2034-459e-be3d-16a2af6182b0').removeClass('collapsed')
-            $('#requests-3b0a7828-2034-459e-be3d-16a2af6182b0').addClass('show')
-            $('#collapse-3b0a7828-2034-459e-be3d-16a2af6182b0').addClass('show')
-            $('#requests-df4dc0b3-d418-4153-ac1c-5310bffa6fac').removeClass('collapsed')
-            $('#collapse-df4dc0b3-d418-4153-ac1c-5310bffa6fac').removeClass('collapsed')
-            $('#requests-df4dc0b3-d418-4153-ac1c-5310bffa6fac').addClass('show')
-            $('#collapse-df4dc0b3-d418-4153-ac1c-5310bffa6fac').addClass('show')
-            $('#requests-573c939a-be4b-4f4f-b625-07203dbd0795').removeClass('collapsed')
-            $('#collapse-573c939a-be4b-4f4f-b625-07203dbd0795').removeClass('collapsed')
-            $('#requests-573c939a-be4b-4f4f-b625-07203dbd0795').addClass('show')
-            $('#collapse-573c939a-be4b-4f4f-b625-07203dbd0795').addClass('show')
-            $('#requests-6b4013c8-cace-4cdc-98ec-38764a5d0ad0').removeClass('collapsed')
-            $('#collapse-6b4013c8-cace-4cdc-98ec-38764a5d0ad0').removeClass('collapsed')
-            $('#requests-6b4013c8-cace-4cdc-98ec-38764a5d0ad0').addClass('show')
-            $('#collapse-6b4013c8-cace-4cdc-98ec-38764a5d0ad0').addClass('show')
-            $('#requests-4c542d18-d6bd-405a-b6c4-a871ca908564').removeClass('collapsed')
-            $('#collapse-4c542d18-d6bd-405a-b6c4-a871ca908564').removeClass('collapsed')
-            $('#requests-4c542d18-d6bd-405a-b6c4-a871ca908564').addClass('show')
-            $('#collapse-4c542d18-d6bd-405a-b6c4-a871ca908564').addClass('show')
-            $('#requests-9d3bbbbd-5b11-4d63-886b-a2e5514d8257').removeClass('collapsed')
-            $('#collapse-9d3bbbbd-5b11-4d63-886b-a2e5514d8257').removeClass('collapsed')
-            $('#requests-9d3bbbbd-5b11-4d63-886b-a2e5514d8257').addClass('show')
-            $('#collapse-9d3bbbbd-5b11-4d63-886b-a2e5514d8257').addClass('show')
-            $('#requests-9599dc2b-9517-4509-9782-9902cd17bef5').removeClass('collapsed')
-            $('#collapse-9599dc2b-9517-4509-9782-9902cd17bef5').removeClass('collapsed')
-            $('#requests-9599dc2b-9517-4509-9782-9902cd17bef5').addClass('show')
-            $('#collapse-9599dc2b-9517-4509-9782-9902cd17bef5').addClass('show')
-            $('#requests-6f682e7a-4c11-46c4-9149-bf6fd09c3680').removeClass('collapsed')
-            $('#collapse-6f682e7a-4c11-46c4-9149-bf6fd09c3680').removeClass('collapsed')
-            $('#requests-6f682e7a-4c11-46c4-9149-bf6fd09c3680').addClass('show')
-            $('#collapse-6f682e7a-4c11-46c4-9149-bf6fd09c3680').addClass('show')
-            $('#requests-9fe0e80f-9bc1-4fbb-b408-1af41d1a1ee3').removeClass('collapsed')
-            $('#collapse-9fe0e80f-9bc1-4fbb-b408-1af41d1a1ee3').removeClass('collapsed')
-            $('#requests-9fe0e80f-9bc1-4fbb-b408-1af41d1a1ee3').addClass('show')
-            $('#collapse-9fe0e80f-9bc1-4fbb-b408-1af41d1a1ee3').addClass('show')
-            $('#requests-0ff3d567-ded8-42a7-ab9e-284458a39cf0').removeClass('collapsed')
-            $('#collapse-0ff3d567-ded8-42a7-ab9e-284458a39cf0').removeClass('collapsed')
-            $('#requests-0ff3d567-ded8-42a7-ab9e-284458a39cf0').addClass('show')
-            $('#collapse-0ff3d567-ded8-42a7-ab9e-284458a39cf0').addClass('show')
-            $('#requests-39b623cc-bd58-4421-a4b0-577c09cf9a8e').removeClass('collapsed')
-            $('#collapse-39b623cc-bd58-4421-a4b0-577c09cf9a8e').removeClass('collapsed')
-            $('#requests-39b623cc-bd58-4421-a4b0-577c09cf9a8e').addClass('show')
-            $('#collapse-39b623cc-bd58-4421-a4b0-577c09cf9a8e').addClass('show')
+            $('#requests-06c69663-b882-489b-9299-a61e06343f5f').removeClass('collapsed')
+            $('#collapse-06c69663-b882-489b-9299-a61e06343f5f').removeClass('collapsed')
+            $('#requests-06c69663-b882-489b-9299-a61e06343f5f').addClass('show')
+            $('#collapse-06c69663-b882-489b-9299-a61e06343f5f').addClass('show')
+            $('#requests-1251fedc-a38d-4a1b-94e8-653e8299d68b').removeClass('collapsed')
+            $('#collapse-1251fedc-a38d-4a1b-94e8-653e8299d68b').removeClass('collapsed')
+            $('#requests-1251fedc-a38d-4a1b-94e8-653e8299d68b').addClass('show')
+            $('#collapse-1251fedc-a38d-4a1b-94e8-653e8299d68b').addClass('show')
+            $('#requests-27e27075-471e-42a4-bd79-276978dcb2b1').removeClass('collapsed')
+            $('#collapse-27e27075-471e-42a4-bd79-276978dcb2b1').removeClass('collapsed')
+            $('#requests-27e27075-471e-42a4-bd79-276978dcb2b1').addClass('show')
+            $('#collapse-27e27075-471e-42a4-bd79-276978dcb2b1').addClass('show')
+            $('#requests-28e4f72d-2fde-4dc2-8c04-a645566df85a').removeClass('collapsed')
+            $('#collapse-28e4f72d-2fde-4dc2-8c04-a645566df85a').removeClass('collapsed')
+            $('#requests-28e4f72d-2fde-4dc2-8c04-a645566df85a').addClass('show')
+            $('#collapse-28e4f72d-2fde-4dc2-8c04-a645566df85a').addClass('show')
+            $('#requests-e61cb82e-3dea-4cc2-84b0-f52c1f324ce0').removeClass('collapsed')
+            $('#collapse-e61cb82e-3dea-4cc2-84b0-f52c1f324ce0').removeClass('collapsed')
+            $('#requests-e61cb82e-3dea-4cc2-84b0-f52c1f324ce0').addClass('show')
+            $('#collapse-e61cb82e-3dea-4cc2-84b0-f52c1f324ce0').addClass('show')
+            $('#requests-b26662a9-a549-42cb-810c-f62d88c5200b').removeClass('collapsed')
+            $('#collapse-b26662a9-a549-42cb-810c-f62d88c5200b').removeClass('collapsed')
+            $('#requests-b26662a9-a549-42cb-810c-f62d88c5200b').addClass('show')
+            $('#collapse-b26662a9-a549-42cb-810c-f62d88c5200b').addClass('show')
+            $('#requests-251c1bd4-8cf5-4b16-8155-20429c30feba').removeClass('collapsed')
+            $('#collapse-251c1bd4-8cf5-4b16-8155-20429c30feba').removeClass('collapsed')
+            $('#requests-251c1bd4-8cf5-4b16-8155-20429c30feba').addClass('show')
+            $('#collapse-251c1bd4-8cf5-4b16-8155-20429c30feba').addClass('show')
+            $('#requests-0bba5aba-624c-4af7-87fa-c990c4dfd13a').removeClass('collapsed')
+            $('#collapse-0bba5aba-624c-4af7-87fa-c990c4dfd13a').removeClass('collapsed')
+            $('#requests-0bba5aba-624c-4af7-87fa-c990c4dfd13a').addClass('show')
+            $('#collapse-0bba5aba-624c-4af7-87fa-c990c4dfd13a').addClass('show')
+            $('#requests-a34d2e29-0448-44e1-96ee-d5781ba52e79').removeClass('collapsed')
+            $('#collapse-a34d2e29-0448-44e1-96ee-d5781ba52e79').removeClass('collapsed')
+            $('#requests-a34d2e29-0448-44e1-96ee-d5781ba52e79').addClass('show')
+            $('#collapse-a34d2e29-0448-44e1-96ee-d5781ba52e79').addClass('show')
+            $('#requests-b37441f5-9b5b-45ec-a098-9774f784b03a').removeClass('collapsed')
+            $('#collapse-b37441f5-9b5b-45ec-a098-9774f784b03a').removeClass('collapsed')
+            $('#requests-b37441f5-9b5b-45ec-a098-9774f784b03a').addClass('show')
+            $('#collapse-b37441f5-9b5b-45ec-a098-9774f784b03a').addClass('show')
+            $('#requests-c1f0c307-2d32-4a46-8e88-e10b04bb48ae').removeClass('collapsed')
+            $('#collapse-c1f0c307-2d32-4a46-8e88-e10b04bb48ae').removeClass('collapsed')
+            $('#requests-c1f0c307-2d32-4a46-8e88-e10b04bb48ae').addClass('show')
+            $('#collapse-c1f0c307-2d32-4a46-8e88-e10b04bb48ae').addClass('show')
         $('#openAllRequests').html("Collapse Requests");
         break;
     case 2:
-            $('#requests-3b0a7828-2034-459e-be3d-16a2af6182b0').addClass('collapsed')
-            $('#collapse-3b0a7828-2034-459e-be3d-16a2af6182b0').addClass('collapsed')
-            $('#requests-3b0a7828-2034-459e-be3d-16a2af6182b0').removeClass('show')
-            $('#collapse-3b0a7828-2034-459e-be3d-16a2af6182b0').removeClass('show')
-            $('#requests-df4dc0b3-d418-4153-ac1c-5310bffa6fac').addClass('collapsed')
-            $('#collapse-df4dc0b3-d418-4153-ac1c-5310bffa6fac').addClass('collapsed')
-            $('#requests-df4dc0b3-d418-4153-ac1c-5310bffa6fac').removeClass('show')
-            $('#collapse-df4dc0b3-d418-4153-ac1c-5310bffa6fac').removeClass('show')
-            $('#requests-573c939a-be4b-4f4f-b625-07203dbd0795').addClass('collapsed')
-            $('#collapse-573c939a-be4b-4f4f-b625-07203dbd0795').addClass('collapsed')
-            $('#requests-573c939a-be4b-4f4f-b625-07203dbd0795').removeClass('show')
-            $('#collapse-573c939a-be4b-4f4f-b625-07203dbd0795').removeClass('show')
-            $('#requests-6b4013c8-cace-4cdc-98ec-38764a5d0ad0').addClass('collapsed')
-            $('#collapse-6b4013c8-cace-4cdc-98ec-38764a5d0ad0').addClass('collapsed')
-            $('#requests-6b4013c8-cace-4cdc-98ec-38764a5d0ad0').removeClass('show')
-            $('#collapse-6b4013c8-cace-4cdc-98ec-38764a5d0ad0').removeClass('show')
-            $('#requests-4c542d18-d6bd-405a-b6c4-a871ca908564').addClass('collapsed')
-            $('#collapse-4c542d18-d6bd-405a-b6c4-a871ca908564').addClass('collapsed')
-            $('#requests-4c542d18-d6bd-405a-b6c4-a871ca908564').removeClass('show')
-            $('#collapse-4c542d18-d6bd-405a-b6c4-a871ca908564').removeClass('show')
-            $('#requests-9d3bbbbd-5b11-4d63-886b-a2e5514d8257').addClass('collapsed')
-            $('#collapse-9d3bbbbd-5b11-4d63-886b-a2e5514d8257').addClass('collapsed')
-            $('#requests-9d3bbbbd-5b11-4d63-886b-a2e5514d8257').removeClass('show')
-            $('#collapse-9d3bbbbd-5b11-4d63-886b-a2e5514d8257').removeClass('show')
-            $('#requests-9599dc2b-9517-4509-9782-9902cd17bef5').addClass('collapsed')
-            $('#collapse-9599dc2b-9517-4509-9782-9902cd17bef5').addClass('collapsed')
-            $('#requests-9599dc2b-9517-4509-9782-9902cd17bef5').removeClass('show')
-            $('#collapse-9599dc2b-9517-4509-9782-9902cd17bef5').removeClass('show')
-            $('#requests-6f682e7a-4c11-46c4-9149-bf6fd09c3680').addClass('collapsed')
-            $('#collapse-6f682e7a-4c11-46c4-9149-bf6fd09c3680').addClass('collapsed')
-            $('#requests-6f682e7a-4c11-46c4-9149-bf6fd09c3680').removeClass('show')
-            $('#collapse-6f682e7a-4c11-46c4-9149-bf6fd09c3680').removeClass('show')
-            $('#requests-9fe0e80f-9bc1-4fbb-b408-1af41d1a1ee3').addClass('collapsed')
-            $('#collapse-9fe0e80f-9bc1-4fbb-b408-1af41d1a1ee3').addClass('collapsed')
-            $('#requests-9fe0e80f-9bc1-4fbb-b408-1af41d1a1ee3').removeClass('show')
-            $('#collapse-9fe0e80f-9bc1-4fbb-b408-1af41d1a1ee3').removeClass('show')
-            $('#requests-0ff3d567-ded8-42a7-ab9e-284458a39cf0').addClass('collapsed')
-            $('#collapse-0ff3d567-ded8-42a7-ab9e-284458a39cf0').addClass('collapsed')
-            $('#requests-0ff3d567-ded8-42a7-ab9e-284458a39cf0').removeClass('show')
-            $('#collapse-0ff3d567-ded8-42a7-ab9e-284458a39cf0').removeClass('show')
-            $('#requests-39b623cc-bd58-4421-a4b0-577c09cf9a8e').addClass('collapsed')
-            $('#collapse-39b623cc-bd58-4421-a4b0-577c09cf9a8e').addClass('collapsed')
-            $('#requests-39b623cc-bd58-4421-a4b0-577c09cf9a8e').removeClass('show')
-            $('#collapse-39b623cc-bd58-4421-a4b0-577c09cf9a8e').removeClass('show')
+            $('#requests-06c69663-b882-489b-9299-a61e06343f5f').addClass('collapsed')
+            $('#collapse-06c69663-b882-489b-9299-a61e06343f5f').addClass('collapsed')
+            $('#requests-06c69663-b882-489b-9299-a61e06343f5f').removeClass('show')
+            $('#collapse-06c69663-b882-489b-9299-a61e06343f5f').removeClass('show')
+            $('#requests-1251fedc-a38d-4a1b-94e8-653e8299d68b').addClass('collapsed')
+            $('#collapse-1251fedc-a38d-4a1b-94e8-653e8299d68b').addClass('collapsed')
+            $('#requests-1251fedc-a38d-4a1b-94e8-653e8299d68b').removeClass('show')
+            $('#collapse-1251fedc-a38d-4a1b-94e8-653e8299d68b').removeClass('show')
+            $('#requests-27e27075-471e-42a4-bd79-276978dcb2b1').addClass('collapsed')
+            $('#collapse-27e27075-471e-42a4-bd79-276978dcb2b1').addClass('collapsed')
+            $('#requests-27e27075-471e-42a4-bd79-276978dcb2b1').removeClass('show')
+            $('#collapse-27e27075-471e-42a4-bd79-276978dcb2b1').removeClass('show')
+            $('#requests-28e4f72d-2fde-4dc2-8c04-a645566df85a').addClass('collapsed')
+            $('#collapse-28e4f72d-2fde-4dc2-8c04-a645566df85a').addClass('collapsed')
+            $('#requests-28e4f72d-2fde-4dc2-8c04-a645566df85a').removeClass('show')
+            $('#collapse-28e4f72d-2fde-4dc2-8c04-a645566df85a').removeClass('show')
+            $('#requests-e61cb82e-3dea-4cc2-84b0-f52c1f324ce0').addClass('collapsed')
+            $('#collapse-e61cb82e-3dea-4cc2-84b0-f52c1f324ce0').addClass('collapsed')
+            $('#requests-e61cb82e-3dea-4cc2-84b0-f52c1f324ce0').removeClass('show')
+            $('#collapse-e61cb82e-3dea-4cc2-84b0-f52c1f324ce0').removeClass('show')
+            $('#requests-b26662a9-a549-42cb-810c-f62d88c5200b').addClass('collapsed')
+            $('#collapse-b26662a9-a549-42cb-810c-f62d88c5200b').addClass('collapsed')
+            $('#requests-b26662a9-a549-42cb-810c-f62d88c5200b').removeClass('show')
+            $('#collapse-b26662a9-a549-42cb-810c-f62d88c5200b').removeClass('show')
+            $('#requests-251c1bd4-8cf5-4b16-8155-20429c30feba').addClass('collapsed')
+            $('#collapse-251c1bd4-8cf5-4b16-8155-20429c30feba').addClass('collapsed')
+            $('#requests-251c1bd4-8cf5-4b16-8155-20429c30feba').removeClass('show')
+            $('#collapse-251c1bd4-8cf5-4b16-8155-20429c30feba').removeClass('show')
+            $('#requests-0bba5aba-624c-4af7-87fa-c990c4dfd13a').addClass('collapsed')
+            $('#collapse-0bba5aba-624c-4af7-87fa-c990c4dfd13a').addClass('collapsed')
+            $('#requests-0bba5aba-624c-4af7-87fa-c990c4dfd13a').removeClass('show')
+            $('#collapse-0bba5aba-624c-4af7-87fa-c990c4dfd13a').removeClass('show')
+            $('#requests-a34d2e29-0448-44e1-96ee-d5781ba52e79').addClass('collapsed')
+            $('#collapse-a34d2e29-0448-44e1-96ee-d5781ba52e79').addClass('collapsed')
+            $('#requests-a34d2e29-0448-44e1-96ee-d5781ba52e79').removeClass('show')
+            $('#collapse-a34d2e29-0448-44e1-96ee-d5781ba52e79').removeClass('show')
+            $('#requests-b37441f5-9b5b-45ec-a098-9774f784b03a').addClass('collapsed')
+            $('#collapse-b37441f5-9b5b-45ec-a098-9774f784b03a').addClass('collapsed')
+            $('#requests-b37441f5-9b5b-45ec-a098-9774f784b03a').removeClass('show')
+            $('#collapse-b37441f5-9b5b-45ec-a098-9774f784b03a').removeClass('show')
+            $('#requests-c1f0c307-2d32-4a46-8e88-e10b04bb48ae').addClass('collapsed')
+            $('#collapse-c1f0c307-2d32-4a46-8e88-e10b04bb48ae').addClass('collapsed')
+            $('#requests-c1f0c307-2d32-4a46-8e88-e10b04bb48ae').removeClass('show')
+            $('#collapse-c1f0c307-2d32-4a46-8e88-e10b04bb48ae').removeClass('show')
         $('#openAllRequests').html("Expand Requests");
         break;
 }
@@ -3382,97 +3287,97 @@ $('#openAllSkipped').on('click', function(e) {
 let clickCount = $(this).data("clickCount") || 1
 switch (clickCount){
     case 1:
-            $('#skipped-3b0a7828-2034-459e-be3d-16a2af6182b0').removeClass('collapsed')
-            $('#skipped-collapse-3b0a7828-2034-459e-be3d-16a2af6182b0').removeClass('collapsed')
-            $('#skipped-3b0a7828-2034-459e-be3d-16a2af6182b0').addClass('show')
-            $('#skipped-collapse-3b0a7828-2034-459e-be3d-16a2af6182b0').addClass('show')
-            $('#skipped-df4dc0b3-d418-4153-ac1c-5310bffa6fac').removeClass('collapsed')
-            $('#skipped-collapse-df4dc0b3-d418-4153-ac1c-5310bffa6fac').removeClass('collapsed')
-            $('#skipped-df4dc0b3-d418-4153-ac1c-5310bffa6fac').addClass('show')
-            $('#skipped-collapse-df4dc0b3-d418-4153-ac1c-5310bffa6fac').addClass('show')
-            $('#skipped-573c939a-be4b-4f4f-b625-07203dbd0795').removeClass('collapsed')
-            $('#skipped-collapse-573c939a-be4b-4f4f-b625-07203dbd0795').removeClass('collapsed')
-            $('#skipped-573c939a-be4b-4f4f-b625-07203dbd0795').addClass('show')
-            $('#skipped-collapse-573c939a-be4b-4f4f-b625-07203dbd0795').addClass('show')
-            $('#skipped-6b4013c8-cace-4cdc-98ec-38764a5d0ad0').removeClass('collapsed')
-            $('#skipped-collapse-6b4013c8-cace-4cdc-98ec-38764a5d0ad0').removeClass('collapsed')
-            $('#skipped-6b4013c8-cace-4cdc-98ec-38764a5d0ad0').addClass('show')
-            $('#skipped-collapse-6b4013c8-cace-4cdc-98ec-38764a5d0ad0').addClass('show')
-            $('#skipped-4c542d18-d6bd-405a-b6c4-a871ca908564').removeClass('collapsed')
-            $('#skipped-collapse-4c542d18-d6bd-405a-b6c4-a871ca908564').removeClass('collapsed')
-            $('#skipped-4c542d18-d6bd-405a-b6c4-a871ca908564').addClass('show')
-            $('#skipped-collapse-4c542d18-d6bd-405a-b6c4-a871ca908564').addClass('show')
-            $('#skipped-9d3bbbbd-5b11-4d63-886b-a2e5514d8257').removeClass('collapsed')
-            $('#skipped-collapse-9d3bbbbd-5b11-4d63-886b-a2e5514d8257').removeClass('collapsed')
-            $('#skipped-9d3bbbbd-5b11-4d63-886b-a2e5514d8257').addClass('show')
-            $('#skipped-collapse-9d3bbbbd-5b11-4d63-886b-a2e5514d8257').addClass('show')
-            $('#skipped-9599dc2b-9517-4509-9782-9902cd17bef5').removeClass('collapsed')
-            $('#skipped-collapse-9599dc2b-9517-4509-9782-9902cd17bef5').removeClass('collapsed')
-            $('#skipped-9599dc2b-9517-4509-9782-9902cd17bef5').addClass('show')
-            $('#skipped-collapse-9599dc2b-9517-4509-9782-9902cd17bef5').addClass('show')
-            $('#skipped-6f682e7a-4c11-46c4-9149-bf6fd09c3680').removeClass('collapsed')
-            $('#skipped-collapse-6f682e7a-4c11-46c4-9149-bf6fd09c3680').removeClass('collapsed')
-            $('#skipped-6f682e7a-4c11-46c4-9149-bf6fd09c3680').addClass('show')
-            $('#skipped-collapse-6f682e7a-4c11-46c4-9149-bf6fd09c3680').addClass('show')
-            $('#skipped-9fe0e80f-9bc1-4fbb-b408-1af41d1a1ee3').removeClass('collapsed')
-            $('#skipped-collapse-9fe0e80f-9bc1-4fbb-b408-1af41d1a1ee3').removeClass('collapsed')
-            $('#skipped-9fe0e80f-9bc1-4fbb-b408-1af41d1a1ee3').addClass('show')
-            $('#skipped-collapse-9fe0e80f-9bc1-4fbb-b408-1af41d1a1ee3').addClass('show')
-            $('#skipped-0ff3d567-ded8-42a7-ab9e-284458a39cf0').removeClass('collapsed')
-            $('#skipped-collapse-0ff3d567-ded8-42a7-ab9e-284458a39cf0').removeClass('collapsed')
-            $('#skipped-0ff3d567-ded8-42a7-ab9e-284458a39cf0').addClass('show')
-            $('#skipped-collapse-0ff3d567-ded8-42a7-ab9e-284458a39cf0').addClass('show')
-            $('#skipped-39b623cc-bd58-4421-a4b0-577c09cf9a8e').removeClass('collapsed')
-            $('#skipped-collapse-39b623cc-bd58-4421-a4b0-577c09cf9a8e').removeClass('collapsed')
-            $('#skipped-39b623cc-bd58-4421-a4b0-577c09cf9a8e').addClass('show')
-            $('#skipped-collapse-39b623cc-bd58-4421-a4b0-577c09cf9a8e').addClass('show')
+            $('#skipped-06c69663-b882-489b-9299-a61e06343f5f').removeClass('collapsed')
+            $('#skipped-collapse-06c69663-b882-489b-9299-a61e06343f5f').removeClass('collapsed')
+            $('#skipped-06c69663-b882-489b-9299-a61e06343f5f').addClass('show')
+            $('#skipped-collapse-06c69663-b882-489b-9299-a61e06343f5f').addClass('show')
+            $('#skipped-1251fedc-a38d-4a1b-94e8-653e8299d68b').removeClass('collapsed')
+            $('#skipped-collapse-1251fedc-a38d-4a1b-94e8-653e8299d68b').removeClass('collapsed')
+            $('#skipped-1251fedc-a38d-4a1b-94e8-653e8299d68b').addClass('show')
+            $('#skipped-collapse-1251fedc-a38d-4a1b-94e8-653e8299d68b').addClass('show')
+            $('#skipped-27e27075-471e-42a4-bd79-276978dcb2b1').removeClass('collapsed')
+            $('#skipped-collapse-27e27075-471e-42a4-bd79-276978dcb2b1').removeClass('collapsed')
+            $('#skipped-27e27075-471e-42a4-bd79-276978dcb2b1').addClass('show')
+            $('#skipped-collapse-27e27075-471e-42a4-bd79-276978dcb2b1').addClass('show')
+            $('#skipped-28e4f72d-2fde-4dc2-8c04-a645566df85a').removeClass('collapsed')
+            $('#skipped-collapse-28e4f72d-2fde-4dc2-8c04-a645566df85a').removeClass('collapsed')
+            $('#skipped-28e4f72d-2fde-4dc2-8c04-a645566df85a').addClass('show')
+            $('#skipped-collapse-28e4f72d-2fde-4dc2-8c04-a645566df85a').addClass('show')
+            $('#skipped-e61cb82e-3dea-4cc2-84b0-f52c1f324ce0').removeClass('collapsed')
+            $('#skipped-collapse-e61cb82e-3dea-4cc2-84b0-f52c1f324ce0').removeClass('collapsed')
+            $('#skipped-e61cb82e-3dea-4cc2-84b0-f52c1f324ce0').addClass('show')
+            $('#skipped-collapse-e61cb82e-3dea-4cc2-84b0-f52c1f324ce0').addClass('show')
+            $('#skipped-b26662a9-a549-42cb-810c-f62d88c5200b').removeClass('collapsed')
+            $('#skipped-collapse-b26662a9-a549-42cb-810c-f62d88c5200b').removeClass('collapsed')
+            $('#skipped-b26662a9-a549-42cb-810c-f62d88c5200b').addClass('show')
+            $('#skipped-collapse-b26662a9-a549-42cb-810c-f62d88c5200b').addClass('show')
+            $('#skipped-251c1bd4-8cf5-4b16-8155-20429c30feba').removeClass('collapsed')
+            $('#skipped-collapse-251c1bd4-8cf5-4b16-8155-20429c30feba').removeClass('collapsed')
+            $('#skipped-251c1bd4-8cf5-4b16-8155-20429c30feba').addClass('show')
+            $('#skipped-collapse-251c1bd4-8cf5-4b16-8155-20429c30feba').addClass('show')
+            $('#skipped-0bba5aba-624c-4af7-87fa-c990c4dfd13a').removeClass('collapsed')
+            $('#skipped-collapse-0bba5aba-624c-4af7-87fa-c990c4dfd13a').removeClass('collapsed')
+            $('#skipped-0bba5aba-624c-4af7-87fa-c990c4dfd13a').addClass('show')
+            $('#skipped-collapse-0bba5aba-624c-4af7-87fa-c990c4dfd13a').addClass('show')
+            $('#skipped-a34d2e29-0448-44e1-96ee-d5781ba52e79').removeClass('collapsed')
+            $('#skipped-collapse-a34d2e29-0448-44e1-96ee-d5781ba52e79').removeClass('collapsed')
+            $('#skipped-a34d2e29-0448-44e1-96ee-d5781ba52e79').addClass('show')
+            $('#skipped-collapse-a34d2e29-0448-44e1-96ee-d5781ba52e79').addClass('show')
+            $('#skipped-b37441f5-9b5b-45ec-a098-9774f784b03a').removeClass('collapsed')
+            $('#skipped-collapse-b37441f5-9b5b-45ec-a098-9774f784b03a').removeClass('collapsed')
+            $('#skipped-b37441f5-9b5b-45ec-a098-9774f784b03a').addClass('show')
+            $('#skipped-collapse-b37441f5-9b5b-45ec-a098-9774f784b03a').addClass('show')
+            $('#skipped-c1f0c307-2d32-4a46-8e88-e10b04bb48ae').removeClass('collapsed')
+            $('#skipped-collapse-c1f0c307-2d32-4a46-8e88-e10b04bb48ae').removeClass('collapsed')
+            $('#skipped-c1f0c307-2d32-4a46-8e88-e10b04bb48ae').addClass('show')
+            $('#skipped-collapse-c1f0c307-2d32-4a46-8e88-e10b04bb48ae').addClass('show')
         $('#openAllSkipped').html("Collapse All Skipped Tests");
         break;
     case 2:
-            $('#skipped-3b0a7828-2034-459e-be3d-16a2af6182b0').addClass('collapsed')
-            $('#skipped-collapse-3b0a7828-2034-459e-be3d-16a2af6182b0').addClass('collapsed')
-            $('#skipped-3b0a7828-2034-459e-be3d-16a2af6182b0').removeClass('show')
-            $('#skipped-collapse-3b0a7828-2034-459e-be3d-16a2af6182b0').removeClass('show')
-            $('#skipped-df4dc0b3-d418-4153-ac1c-5310bffa6fac').addClass('collapsed')
-            $('#skipped-collapse-df4dc0b3-d418-4153-ac1c-5310bffa6fac').addClass('collapsed')
-            $('#skipped-df4dc0b3-d418-4153-ac1c-5310bffa6fac').removeClass('show')
-            $('#skipped-collapse-df4dc0b3-d418-4153-ac1c-5310bffa6fac').removeClass('show')
-            $('#skipped-573c939a-be4b-4f4f-b625-07203dbd0795').addClass('collapsed')
-            $('#skipped-collapse-573c939a-be4b-4f4f-b625-07203dbd0795').addClass('collapsed')
-            $('#skipped-573c939a-be4b-4f4f-b625-07203dbd0795').removeClass('show')
-            $('#skipped-collapse-573c939a-be4b-4f4f-b625-07203dbd0795').removeClass('show')
-            $('#skipped-6b4013c8-cace-4cdc-98ec-38764a5d0ad0').addClass('collapsed')
-            $('#skipped-collapse-6b4013c8-cace-4cdc-98ec-38764a5d0ad0').addClass('collapsed')
-            $('#skipped-6b4013c8-cace-4cdc-98ec-38764a5d0ad0').removeClass('show')
-            $('#skipped-collapse-6b4013c8-cace-4cdc-98ec-38764a5d0ad0').removeClass('show')
-            $('#skipped-4c542d18-d6bd-405a-b6c4-a871ca908564').addClass('collapsed')
-            $('#skipped-collapse-4c542d18-d6bd-405a-b6c4-a871ca908564').addClass('collapsed')
-            $('#skipped-4c542d18-d6bd-405a-b6c4-a871ca908564').removeClass('show')
-            $('#skipped-collapse-4c542d18-d6bd-405a-b6c4-a871ca908564').removeClass('show')
-            $('#skipped-9d3bbbbd-5b11-4d63-886b-a2e5514d8257').addClass('collapsed')
-            $('#skipped-collapse-9d3bbbbd-5b11-4d63-886b-a2e5514d8257').addClass('collapsed')
-            $('#skipped-9d3bbbbd-5b11-4d63-886b-a2e5514d8257').removeClass('show')
-            $('#skipped-collapse-9d3bbbbd-5b11-4d63-886b-a2e5514d8257').removeClass('show')
-            $('#skipped-9599dc2b-9517-4509-9782-9902cd17bef5').addClass('collapsed')
-            $('#skipped-collapse-9599dc2b-9517-4509-9782-9902cd17bef5').addClass('collapsed')
-            $('#skipped-9599dc2b-9517-4509-9782-9902cd17bef5').removeClass('show')
-            $('#skipped-collapse-9599dc2b-9517-4509-9782-9902cd17bef5').removeClass('show')
-            $('#skipped-6f682e7a-4c11-46c4-9149-bf6fd09c3680').addClass('collapsed')
-            $('#skipped-collapse-6f682e7a-4c11-46c4-9149-bf6fd09c3680').addClass('collapsed')
-            $('#skipped-6f682e7a-4c11-46c4-9149-bf6fd09c3680').removeClass('show')
-            $('#skipped-collapse-6f682e7a-4c11-46c4-9149-bf6fd09c3680').removeClass('show')
-            $('#skipped-9fe0e80f-9bc1-4fbb-b408-1af41d1a1ee3').addClass('collapsed')
-            $('#skipped-collapse-9fe0e80f-9bc1-4fbb-b408-1af41d1a1ee3').addClass('collapsed')
-            $('#skipped-9fe0e80f-9bc1-4fbb-b408-1af41d1a1ee3').removeClass('show')
-            $('#skipped-collapse-9fe0e80f-9bc1-4fbb-b408-1af41d1a1ee3').removeClass('show')
-            $('#skipped-0ff3d567-ded8-42a7-ab9e-284458a39cf0').addClass('collapsed')
-            $('#skipped-collapse-0ff3d567-ded8-42a7-ab9e-284458a39cf0').addClass('collapsed')
-            $('#skipped-0ff3d567-ded8-42a7-ab9e-284458a39cf0').removeClass('show')
-            $('#skipped-collapse-0ff3d567-ded8-42a7-ab9e-284458a39cf0').removeClass('show')
-            $('#skipped-39b623cc-bd58-4421-a4b0-577c09cf9a8e').addClass('collapsed')
-            $('#skipped-collapse-39b623cc-bd58-4421-a4b0-577c09cf9a8e').addClass('collapsed')
-            $('#skipped-39b623cc-bd58-4421-a4b0-577c09cf9a8e').removeClass('show')
-            $('#skipped-collapse-39b623cc-bd58-4421-a4b0-577c09cf9a8e').removeClass('show')
+            $('#skipped-06c69663-b882-489b-9299-a61e06343f5f').addClass('collapsed')
+            $('#skipped-collapse-06c69663-b882-489b-9299-a61e06343f5f').addClass('collapsed')
+            $('#skipped-06c69663-b882-489b-9299-a61e06343f5f').removeClass('show')
+            $('#skipped-collapse-06c69663-b882-489b-9299-a61e06343f5f').removeClass('show')
+            $('#skipped-1251fedc-a38d-4a1b-94e8-653e8299d68b').addClass('collapsed')
+            $('#skipped-collapse-1251fedc-a38d-4a1b-94e8-653e8299d68b').addClass('collapsed')
+            $('#skipped-1251fedc-a38d-4a1b-94e8-653e8299d68b').removeClass('show')
+            $('#skipped-collapse-1251fedc-a38d-4a1b-94e8-653e8299d68b').removeClass('show')
+            $('#skipped-27e27075-471e-42a4-bd79-276978dcb2b1').addClass('collapsed')
+            $('#skipped-collapse-27e27075-471e-42a4-bd79-276978dcb2b1').addClass('collapsed')
+            $('#skipped-27e27075-471e-42a4-bd79-276978dcb2b1').removeClass('show')
+            $('#skipped-collapse-27e27075-471e-42a4-bd79-276978dcb2b1').removeClass('show')
+            $('#skipped-28e4f72d-2fde-4dc2-8c04-a645566df85a').addClass('collapsed')
+            $('#skipped-collapse-28e4f72d-2fde-4dc2-8c04-a645566df85a').addClass('collapsed')
+            $('#skipped-28e4f72d-2fde-4dc2-8c04-a645566df85a').removeClass('show')
+            $('#skipped-collapse-28e4f72d-2fde-4dc2-8c04-a645566df85a').removeClass('show')
+            $('#skipped-e61cb82e-3dea-4cc2-84b0-f52c1f324ce0').addClass('collapsed')
+            $('#skipped-collapse-e61cb82e-3dea-4cc2-84b0-f52c1f324ce0').addClass('collapsed')
+            $('#skipped-e61cb82e-3dea-4cc2-84b0-f52c1f324ce0').removeClass('show')
+            $('#skipped-collapse-e61cb82e-3dea-4cc2-84b0-f52c1f324ce0').removeClass('show')
+            $('#skipped-b26662a9-a549-42cb-810c-f62d88c5200b').addClass('collapsed')
+            $('#skipped-collapse-b26662a9-a549-42cb-810c-f62d88c5200b').addClass('collapsed')
+            $('#skipped-b26662a9-a549-42cb-810c-f62d88c5200b').removeClass('show')
+            $('#skipped-collapse-b26662a9-a549-42cb-810c-f62d88c5200b').removeClass('show')
+            $('#skipped-251c1bd4-8cf5-4b16-8155-20429c30feba').addClass('collapsed')
+            $('#skipped-collapse-251c1bd4-8cf5-4b16-8155-20429c30feba').addClass('collapsed')
+            $('#skipped-251c1bd4-8cf5-4b16-8155-20429c30feba').removeClass('show')
+            $('#skipped-collapse-251c1bd4-8cf5-4b16-8155-20429c30feba').removeClass('show')
+            $('#skipped-0bba5aba-624c-4af7-87fa-c990c4dfd13a').addClass('collapsed')
+            $('#skipped-collapse-0bba5aba-624c-4af7-87fa-c990c4dfd13a').addClass('collapsed')
+            $('#skipped-0bba5aba-624c-4af7-87fa-c990c4dfd13a').removeClass('show')
+            $('#skipped-collapse-0bba5aba-624c-4af7-87fa-c990c4dfd13a').removeClass('show')
+            $('#skipped-a34d2e29-0448-44e1-96ee-d5781ba52e79').addClass('collapsed')
+            $('#skipped-collapse-a34d2e29-0448-44e1-96ee-d5781ba52e79').addClass('collapsed')
+            $('#skipped-a34d2e29-0448-44e1-96ee-d5781ba52e79').removeClass('show')
+            $('#skipped-collapse-a34d2e29-0448-44e1-96ee-d5781ba52e79').removeClass('show')
+            $('#skipped-b37441f5-9b5b-45ec-a098-9774f784b03a').addClass('collapsed')
+            $('#skipped-collapse-b37441f5-9b5b-45ec-a098-9774f784b03a').addClass('collapsed')
+            $('#skipped-b37441f5-9b5b-45ec-a098-9774f784b03a').removeClass('show')
+            $('#skipped-collapse-b37441f5-9b5b-45ec-a098-9774f784b03a').removeClass('show')
+            $('#skipped-c1f0c307-2d32-4a46-8e88-e10b04bb48ae').addClass('collapsed')
+            $('#skipped-collapse-c1f0c307-2d32-4a46-8e88-e10b04bb48ae').addClass('collapsed')
+            $('#skipped-c1f0c307-2d32-4a46-8e88-e10b04bb48ae').removeClass('show')
+            $('#skipped-collapse-c1f0c307-2d32-4a46-8e88-e10b04bb48ae').removeClass('show')
         $('#openAllSkipped').html("Expand All Skipped Tests");
         break;
 }
@@ -3490,57 +3395,9 @@ let failedItemContent
 let failedItemHeading
 switch (clickCount){
     case 1:
-            failedItemHeading = $('#fails-de625965-2b01-46bd-aa54-706ac67f612d');
-            failedItemContent = $("#fails-collapse-de625965-2b01-46bd-aa54-706ac67f612d");
-            failedItemHeading.removeClass('collapsed')
-            failedItemContent.removeClass('collapsed')
-            failedItemHeading.addClass('show')
-            failedItemContent.addClass('show')
-            failedItemHeading = $('#fails-9a2ca6cd-8656-4247-b735-7472e345248a');
-            failedItemContent = $("#fails-collapse-9a2ca6cd-8656-4247-b735-7472e345248a");
-            failedItemHeading.removeClass('collapsed')
-            failedItemContent.removeClass('collapsed')
-            failedItemHeading.addClass('show')
-            failedItemContent.addClass('show')
-            failedItemHeading = $('#fails-0eb1bc84-40c3-428f-9930-76311e8c3035');
-            failedItemContent = $("#fails-collapse-0eb1bc84-40c3-428f-9930-76311e8c3035");
-            failedItemHeading.removeClass('collapsed')
-            failedItemContent.removeClass('collapsed')
-            failedItemHeading.addClass('show')
-            failedItemContent.addClass('show')
-            failedItemHeading = $('#fails-a855e9aa-dd93-44fc-b7a3-f47b10e53719');
-            failedItemContent = $("#fails-collapse-a855e9aa-dd93-44fc-b7a3-f47b10e53719");
-            failedItemHeading.removeClass('collapsed')
-            failedItemContent.removeClass('collapsed')
-            failedItemHeading.addClass('show')
-            failedItemContent.addClass('show')
         $('#openAllFailed').html("Collapse All Failed Tests");
         break;
     case 2:
-            failedItemHeading = $('#fails-de625965-2b01-46bd-aa54-706ac67f612d');
-            failedItemContent = $("#fails-collapse-de625965-2b01-46bd-aa54-706ac67f612d");
-            failedItemHeading.removeClass('show')
-            failedItemContent.removeClass('show')
-            failedItemHeading.addClass('collapsed')
-            failedItemContent.addClass('collapsed')
-            failedItemHeading = $('#fails-9a2ca6cd-8656-4247-b735-7472e345248a');
-            failedItemContent = $("#fails-collapse-9a2ca6cd-8656-4247-b735-7472e345248a");
-            failedItemHeading.removeClass('show')
-            failedItemContent.removeClass('show')
-            failedItemHeading.addClass('collapsed')
-            failedItemContent.addClass('collapsed')
-            failedItemHeading = $('#fails-0eb1bc84-40c3-428f-9930-76311e8c3035');
-            failedItemContent = $("#fails-collapse-0eb1bc84-40c3-428f-9930-76311e8c3035");
-            failedItemHeading.removeClass('show')
-            failedItemContent.removeClass('show')
-            failedItemHeading.addClass('collapsed')
-            failedItemContent.addClass('collapsed')
-            failedItemHeading = $('#fails-a855e9aa-dd93-44fc-b7a3-f47b10e53719');
-            failedItemContent = $("#fails-collapse-a855e9aa-dd93-44fc-b7a3-f47b10e53719");
-            failedItemHeading.removeClass('show')
-            failedItemContent.removeClass('show')
-            failedItemHeading.addClass('collapsed')
-            failedItemContent.addClass('collapsed')
         $('#openAllFailed').html("Expand All Failed Tests");
         break;
 }
@@ -3665,8 +3522,6 @@ function scrollFunction() {
     document.getElementById("openAllRequests").style.display = "none";
 
 
-    document.getElementById("showOnlyFailures").style.display = "none";
-    document.getElementById("openAllFailed").style.display = "none";
   } else {
     document.getElementById("topOfRequestsScreen").style.display = "none";
     document.getElementById("topOfFailuresScreen").style.display = "none";
@@ -3674,8 +3529,6 @@ function scrollFunction() {
     document.getElementById("openAll").style.display = "block";
     document.getElementById("openAllRequests").style.display = "block";
 
-    document.getElementById("showOnlyFailures").style.display = "block";
-    document.getElementById("openAllFailed").style.display = "block";
   }
 }
 
@@ -3738,8 +3591,6 @@ window.onload = function () {
   document.getElementById('iteration-0').click();
   document.getElementById('iterationSelected').innerHTML = `Iteration ${document.getElementById('iteration-0').innerHTML} selected`
 
-    $("#iteration-0").removeClass('itPassed').addClass('itFailed')
-    $("#iteration-0").removeClass('itPassed').addClass('itFailed')
 }
 </script>
 
